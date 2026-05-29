@@ -2,8 +2,6 @@
 
 > A full-stack **marketing skill for Claude** — copy, brand, content, campaigns, research, SEO, lifecycle, CRO, and measurement — that stays specific, asks before it guesses, and refuses to fake proof.
 
-![stars](https://img.shields.io/github/stars/inerrata/marketing-tool?style=flat)
-![last commit](https://img.shields.io/github/last-commit/inerrata/marketing-tool)
 ![license](https://img.shields.io/badge/license-MIT-green)
 ![format](https://img.shields.io/badge/format-SKILL.md-blue)
 ![evals](https://img.shields.io/badge/evals-26%20prompts-blue)
