@@ -1,9 +1,7 @@
-# 📋 marketing-skill
+# 📋 brief
 
 > A full-stack **marketing skill for Claude** — copy, brand, content, campaigns, research, SEO, lifecycle, CRO, and measurement — that stays specific, asks before it guesses, and refuses to fake proof.
 
-![stars](https://img.shields.io/github/stars/inerrata/marketing-tool?style=flat)
-![last commit](https://img.shields.io/github/last-commit/inerrata/marketing-tool)
 ![license](https://img.shields.io/badge/license-MIT-green)
 ![format](https://img.shields.io/badge/format-SKILL.md-blue)
 ![evals](https://img.shields.io/badge/evals-26%20prompts-blue)
@@ -75,14 +73,14 @@ Each of 26 eval prompts was run **with the skill and without it (baseline)**, th
 
 ## Install
 
-### Claude Code (global)
+### Quick start (Claude Code)
 
 ```bash
-git clone https://github.com/inerrata/marketing-tool.git
-cp -r marketing-tool/_unpacked/marketing ~/.claude/skills/marketing
-```
+# macOS / Linux
+curl -fsSL https://raw.githubusercontent.com/inerrata/marketing-tool/main/install.sh | bash
 
-Restart Claude Code — it auto-discovers skills. Confirm with: *"what skills do you have available?"*
+# Windows (PowerShell)
+irm https://raw.githubusercontent.com/inerrata/marketing-tool/main/install.ps1 | iex
 
 ### Claude Code (project-specific)
 
