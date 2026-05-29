@@ -1,0 +1,13 @@
+{
+  "eval_id": 8,
+  "eval_name": "linkedin-consulting",
+  "module": "content-strategy",
+  "type": "phrasing_variation",
+  "prompt": "what should i be posting on linkedin for my consulting business",
+  "assertions": [
+    "Triggered content strategy guidance, not a generic 'post valuable content' answer",
+    "Gives content pillars plus format guidance tied to LinkedIn norms",
+    "Ties content to funnel stages",
+    "May ask about niche/audience"
+  ]
+}

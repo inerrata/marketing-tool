@@ -1,0 +1,12 @@
+{
+  "eval_id": 4,
+  "eval_name": "positioning-statement",
+  "module": "brand-messaging",
+  "type": "gate_A",
+  "prompt": "Write a positioning statement for a project-management tool aimed at agencies.",
+  "assertions": [
+    "Gate A fired: asked 2-3 sharp scoping questions BEFORE writing",
+    "Questions cover narrowest audience, key differentiator, and the real competing alternative",
+    "Did NOT output a finished positioning statement built on guessed inputs"
+  ]
+}

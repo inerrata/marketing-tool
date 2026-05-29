@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Triggered content strategy guidance, not a generic 'post valuable content' answer",
+      "passed": false,
+      "evidence": "The skill was triggered (trigger_decision.json: triggered=true) but the output is entirely Gate A clarifying questions — it delivers no content strategy guidance, pillars, or formats in the body of the response."
+    },
+    {
+      "text": "Gives content pillars plus format guidance tied to LinkedIn norms",
+      "passed": false,
+      "evidence": "The response contains no content pillars and no LinkedIn format guidance; it only asks three questions and offers to provide a 'general starting framework' if the user insists."
+    },
+    {
+      "text": "Ties content to funnel stages",
+      "passed": false,
+      "evidence": "There is no mention of funnel stages anywhere in the response."
+    },
+    {
+      "text": "May ask about niche/audience",
+      "passed": true,
+      "evidence": "Question 1 explicitly asks 'Who exactly are you trying to reach?' including niche and audience specifics."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 3,
+    "total": 4,
+    "pass_rate": 0.25
+  }
+}

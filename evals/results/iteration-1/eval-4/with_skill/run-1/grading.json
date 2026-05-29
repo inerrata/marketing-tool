@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Gate A fired: asked 2-3 sharp scoping questions BEFORE writing",
+      "passed": true,
+      "evidence": "The response asks exactly three focused questions before writing and explicitly states it will produce the statement only after receiving answers."
+    },
+    {
+      "text": "Questions cover narrowest audience, key differentiator, and the real competing alternative",
+      "passed": true,
+      "evidence": "Q1 asks for the narrowest agency target, Q2 asks for the one differentiating feature versus alternatives, and Q3 asks which specific competitor or alternative they are really displacing."
+    },
+    {
+      "text": "Did NOT output a finished positioning statement built on guessed inputs",
+      "passed": true,
+      "evidence": "The response contains no finished positioning statement; it only shows the template format it will use after receiving answers."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.00
+  }
+}

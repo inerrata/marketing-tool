@@ -1,0 +1,1 @@
+{"triggered": true, "reason": "The request asks for email subject lines, which is explicitly covered by the marketing skill's copywriting scope (emails, CTAs, copy writing).", "references_read": ["SKILL.md"]}

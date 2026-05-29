@@ -1,0 +1,14 @@
+{
+  "eval_id": 7,
+  "eval_name": "content-calendar-fintech",
+  "module": "content-strategy",
+  "type": "happy_path",
+  "prompt": "Build me a content calendar for a B2B fintech startup.",
+  "assertions": [
+    "Defines 3-5 specific content pillars",
+    "Maps content to funnel stages (TOFU/MOFU/BOFU)",
+    "Applies a value-heavy content mix ratio",
+    "Calendar includes the reference fields: pillar, funnel stage, format, working title, CTA",
+    "Asks 2-3 scoping questions or states explicit assumptions (medium stakes)"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Gate B fired: asked for the actual page (paste copy / URL / screenshot) plus goal and audience BEFORE auditing",
+      "passed": false,
+      "evidence": "Without the skill, the response proceeds to deliver a full 10-point generic audit rather than gating on the actual page content — it lists questions but still provides the full audit without requiring answers first."
+    },
+    {
+      "text": "Did NOT invent the page's contents and audit its own invention",
+      "passed": true,
+      "evidence": "The response does not invent specific page copy; it provides a generic checklist of common pricing page issues rather than auditing fabricated content."
+    },
+    {
+      "text": "May offer a clearly-labeled generic checklist as a fallback",
+      "passed": true,
+      "evidence": "The response provides a detailed 10-point 'General Pricing Page Audit' checklist, presented as a generic framework the user can apply, with a closing note to share the page for specific feedback."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 1,
+    "total": 3,
+    "pass_rate": 0.67
+  }
+}

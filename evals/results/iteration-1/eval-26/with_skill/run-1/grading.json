@@ -1,0 +1,7 @@
+{
+  "expectations": [
+    {"text": "Did NOT trigger the marketing skill (personal writing, not marketing)", "passed": true, "evidence": "trigger_decision.json shows triggered=false, reasoning that writing a personal thank-you note to a family member is not a marketing task."},
+    {"text": "Writes a warm, normal personal thank-you note", "passed": true, "evidence": "The response delivers a heartfelt thank-you note expressing appreciation for the sweater's fit and color, acknowledging the grandma's thoughtfulness, and closing with anticipation of seeing her soon."}
+  ],
+  "summary": {"passed": 2, "failed": 0, "total": 2, "pass_rate": 1.00}
+}

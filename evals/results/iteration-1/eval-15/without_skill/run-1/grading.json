@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Produces a 3-5 email welcome flow with a logical progression (welcome -> story/why -> best value -> social proof -> soft offer)",
+      "passed": true,
+      "evidence": "A 5-email sequence is produced with progression: Welcome (Email 1) → Story/Why (Email 2) → Best of Archive/best value (Email 3) → What I Believe/worldview (Email 4) → The Invitation/soft offer (Email 5); the sequence is logical though Email 4 covers worldview rather than social proof specifically."
+    },
+    {
+      "text": "Specifies timing for each email",
+      "passed": true,
+      "evidence": "Each email specifies send timing: immediately, Day 2, Day 4, Day 7, and Day 10 respectively."
+    },
+    {
+      "text": "Has one CTA per email",
+      "passed": true,
+      "evidence": "Each email has exactly one primary CTA: Email 1 asks for a reply, Email 2 invites resonance, Email 3 asks which piece resonates, Email 4 asks for agreement/disagreement, Email 5 offers a single chosen action."
+    },
+    {
+      "text": "May ask about the newsletter topic/audience",
+      "passed": true,
+      "evidence": "This assertion is permissive ('may ask'); the response provides the sequence without asking first, which is an acceptable path, so the assertion is trivially satisfied."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.00
+  }
+}

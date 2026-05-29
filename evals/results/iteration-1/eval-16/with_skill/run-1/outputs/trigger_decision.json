@@ -1,0 +1,1 @@
+{"triggered": true, "reason": "The request asks to plan a win-back email sequence, which falls squarely under 'email sequences, nurture flows, lifecycle/drip campaigns' in the skill's routing table.", "references_read": ["email-lifecycle.md"]}

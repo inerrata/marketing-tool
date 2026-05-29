@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Proceeded without Gate A because audience + differentiator were supplied",
+      "passed": true,
+      "evidence": "No trigger_decision.json is present, and the response opens with a stated assumption rather than Gate A questions, proceeding directly to the value proposition because audience (busy parents) and differentiator (5 minutes, no ultra-processed) were both given."
+    },
+    {
+      "text": "Produced an outcome-led, specific value proposition",
+      "passed": true,
+      "evidence": "The primary value proposition leads with the parent outcome ('Real food on the table in 5 minutes') and frames the trade-off tension parents feel, making it outcome-led and concrete rather than feature-led."
+    },
+    {
+      "text": "Is differentiated enough to pass the 'only this brand could say it' test",
+      "passed": true,
+      "evidence": "The pairing of a verifiable '5 minutes' time claim with the explicit 'no ultra-processed ingredients' negative claim is specific enough that no generic meal-kit or takeaway brand could say the same thing."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.00
+  }
+}

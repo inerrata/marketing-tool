@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Includes firmographics, goals, pains, objections, buying triggers, watering holes, and decision role",
+      "passed": false,
+      "evidence": "The response covers firmographics, goals, pains, buying triggers, and decision role, but does not include objections or watering holes (channels are listed but not framed as watering holes)."
+    },
+    {
+      "text": "Explicitly flags the ICP as a hypothesis pending real customer evidence",
+      "passed": false,
+      "evidence": "The response notes assumptions made but frames them as pragmatic scaffolding rather than explicitly flagging the ICP as a hypothesis pending validation with real customer evidence."
+    },
+    {
+      "text": "May ask 1-2 questions first",
+      "passed": true,
+      "evidence": "This assertion is permissive ('may ask'); the response proceeds without asking questions, which is an acceptable path, so the assertion is trivially satisfied."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 2,
+    "total": 3,
+    "pass_rate": 0.33
+  }
+}

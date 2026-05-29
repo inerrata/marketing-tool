@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Computes LTV correctly (50*18 = 900)",
+      "passed": true,
+      "evidence": "The Key Numbers table shows 'Lifetime Value (LTV) = $900 (18 × $50)' — correct computation."
+    },
+    {
+      "text": "Computes LTV:CAC ratio (~2.25:1)",
+      "passed": true,
+      "evidence": "The Key Numbers table shows 'LTV:CAC Ratio = 2.25x' — correct ratio of $900/$400."
+    },
+    {
+      "text": "Shows the formulas and inputs used",
+      "passed": true,
+      "evidence": "The Key Numbers table displays all inputs (CAC $400, MRR $50, lifetime 18 months) and derived figures, and the LTV computation is shown inline as '18 × $50'; CAC payback is defined as CAC ÷ monthly revenue."
+    },
+    {
+      "text": "Interprets against the ~3:1 guideline while flagging benchmarks vary by industry and gross margin matters",
+      "passed": false,
+      "evidence": "The response references the 3:1 SaaS benchmark and mentions gross margin is relevant to payback period, but does not explicitly flag that benchmarks vary by industry or that gross margin matters to LTV:CAC interpretation."
+    },
+    {
+      "text": "Does not present the verdict as financial certainty",
+      "passed": true,
+      "evidence": "The response uses hedged language throughout: 'viable but thin,' 'a rough benchmark is 3:1, but this varies by industry,' and frames recommendations as signals rather than definitive conclusions."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 1,
+    "total": 5,
+    "pass_rate": 0.80
+  }
+}

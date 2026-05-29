@@ -1,0 +1,12 @@
+{
+  "eval_id": 5,
+  "eval_name": "brand-voice",
+  "module": "brand-messaging",
+  "type": "gate_A",
+  "prompt": "Help me define my brand voice.",
+  "assertions": [
+    "Gate A fired: asked scoping questions before producing a voice profile",
+    "Asked about audience, the 3 words the brand should/shouldn't feel like, and competitors",
+    "Did not invent a brand voice from nothing"
+  ]
+}

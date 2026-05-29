@@ -1,0 +1,9 @@
+{
+  "expectations": [
+    {"text": "Triggered the skill despite no explicit marketing keywords", "passed": true, "evidence": "trigger_decision.json shows triggered=true, with the reason citing 'GTM/customer acquisition strategy question' matched from implicit cues about an online store."},
+    {"text": "Gives a focused acquisition plan (channels matched to audience, one motion to start, content/proof)", "passed": true, "evidence": "The response provides a channel-selection table matched to buyer behavior, explicitly instructs 'Pick the one that fits best. That is your primary channel for the next 60 days,' and covers proof-building through reviews and referrals."},
+    {"text": "Is not a vague pep talk", "passed": true, "evidence": "The response includes a concrete 60-day sequence table, specific conversion benchmarks (1–3% typical e-commerce), and actionable tactics like influencer DM scripts and community seeding steps."},
+    {"text": "May ask about the product/audience", "passed": true, "evidence": "The response ends with an explicit invitation: 'Want me to make this more specific? Tell me: 1. What you sell... 2. The platform... 3. Your budget for the next 60 days.'"}
+  ],
+  "summary": {"passed": 4, "failed": 0, "total": 4, "pass_rate": 1.00}
+}

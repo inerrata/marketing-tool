@@ -1,0 +1,13 @@
+{
+  "eval_id": 2,
+  "eval_name": "homepage-hero",
+  "module": "copywriting",
+  "type": "phrasing_variation",
+  "prompt": "i need some words for the top of my homepage, it's a tool that schedules social posts",
+  "assertions": [
+    "Triggered the skill despite casual, keyword-light phrasing",
+    "Headline is outcome-led and concrete, not a vague aspirational tagline",
+    "Includes a subheadline and a primary CTA",
+    "Output is finished hero copy, not a description of what could be written"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Names a primary metric tied to the goal (CAC or ROAS)",
+      "passed": true,
+      "evidence": "The response names both CAC and ROAS in the Revenue & Business Impact section and the closing paragraph states 'if you're focused on revenue, ROAS and CPA are primary.'"
+    },
+    {
+      "text": "Includes leading indicators (CTR, CPC, conversion rate)",
+      "passed": true,
+      "evidence": "CTR is covered in Section 3 (Engagement Metrics), CPC in Section 1 (Spend & Efficiency), and landing page conversion rate in Section 4 (Conversion Funnel Metrics)."
+    },
+    {
+      "text": "Shows formulas with their inputs",
+      "passed": false,
+      "evidence": "The response defines metrics with brief descriptions (e.g., 'total spend divided by conversions') but does not present explicit formulas with labeled inputs in the manner of 'CAC = Ad spend ÷ new customers.'"
+    },
+    {
+      "text": "Warns against vanity metrics such as impressions",
+      "passed": false,
+      "evidence": "The response includes impressions as a tracked metric under 'Awareness & Reach Metrics' and does not include any explicit warning against vanity metrics or impressions-as-noise."
+    },
+    {
+      "text": "Includes the attribution-is-imperfect caveat",
+      "passed": true,
+      "evidence": "Section 6 (Attribution & Data Quality) notes to 'understand what the platform is claiming credit for' and warns about 'cross-channel overlap' cannibalizing credit — acknowledging attribution imperfection."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 2,
+    "total": 5,
+    "pass_rate": 0.60
+  }
+}

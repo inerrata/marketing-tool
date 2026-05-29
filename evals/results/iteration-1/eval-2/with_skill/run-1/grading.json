@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Triggered the skill despite casual, keyword-light phrasing",
+      "passed": true,
+      "evidence": "trigger_decision.json confirms triggered=true despite the casual prompt 'i need some words for the top of my homepage'."
+    },
+    {
+      "text": "Headline is outcome-led and concrete, not a vague aspirational tagline",
+      "passed": true,
+      "evidence": "Option 1 headline 'Schedule a week of social posts in 20 minutes.' is outcome-led and quantitatively concrete, not a vague aspirational tagline."
+    },
+    {
+      "text": "Includes a subheadline and a primary CTA",
+      "passed": true,
+      "evidence": "Each of the three options includes a clearly labeled subheadline and a primary CTA (e.g. 'Start scheduling free')."
+    },
+    {
+      "text": "Output is finished hero copy, not a description of what could be written",
+      "passed": true,
+      "evidence": "The response delivers three complete, ready-to-use hero copy sets with headlines, subheadlines, and CTAs before optionally asking refinement questions."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.00
+  }
+}

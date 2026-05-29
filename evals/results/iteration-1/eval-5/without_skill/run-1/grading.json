@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Gate A fired: asked scoping questions before producing a voice profile",
+      "passed": false,
+      "evidence": "Although the response includes questions in Step 1, it simultaneously delivers a full generic brand voice framework with voice pillars, tone map, and word list templates, rather than purely asking first and waiting."
+    },
+    {
+      "text": "Asked about audience, the 3 words the brand should/shouldn't feel like, and competitors",
+      "passed": false,
+      "evidence": "The response asks about audience (Q4-6) and about words to use/avoid (Q8-9), but does not ask specifically about competitors or competitive positioning."
+    },
+    {
+      "text": "Did not invent a brand voice from nothing",
+      "passed": true,
+      "evidence": "The response provides a reusable template framework with placeholder examples rather than inventing a specific brand voice for the user's unnamed brand."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 2,
+    "total": 3,
+    "pass_rate": 0.33
+  }
+}

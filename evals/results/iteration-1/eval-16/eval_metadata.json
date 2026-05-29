@@ -1,0 +1,13 @@
+{
+  "eval_id": 16,
+  "eval_name": "winback-60day",
+  "module": "email-lifecycle",
+  "type": "happy_path",
+  "prompt": "Plan a win-back sequence for customers who haven't logged in for 60 days.",
+  "assertions": [
+    "Re-engagement flow that acknowledges the silence and offers a reason to return",
+    "Makes both staying and leaving easy",
+    "Ends with suppression/removal of non-responders to protect deliverability",
+    "Tone is helpful, not nagging"
+  ]
+}

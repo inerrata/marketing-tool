@@ -1,0 +1,9 @@
+{
+  "expectations": [
+    {"text": "Synthesizes GTM (research + channels + acquisition motion), content, email, and launch", "passed": true, "evidence": "The response covers ICP research (Step 1), channel selection with community/network/SEO options (Step 2), content and email welcome sequence (Step 3), and a full launch plan (Steps 5–6) with a 30-day timeline."},
+    {"text": "Is sequenced and focused (one channel/motion first, not everything at once)", "passed": true, "evidence": "The response explicitly states 'Focus beats breadth. One audience, one channel, one offer' and directs the founder to pick ONE primary channel (community + network combined) for launch."},
+    {"text": "Asks a couple of scoping questions or states clear assumptions", "passed": true, "evidence": "The response opens with an explicit Assumptions block stating product readiness and first-customer goals, and Step 1 directs the founder to answer three specific scoping questions in writing."},
+    {"text": "Stays structured rather than a generic info-dump", "passed": true, "evidence": "The response is organized into six numbered steps plus a 30-day timeline table and a 'What Not to Do' section, each with clear headings and focused content."}
+  ],
+  "summary": {"passed": 4, "failed": 0, "total": 4, "pass_rate": 1.00}
+}

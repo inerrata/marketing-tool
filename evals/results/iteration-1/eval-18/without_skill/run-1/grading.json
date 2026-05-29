@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Gate B satisfied: audited the actual provided copy rather than asking for it",
+      "passed": true,
+      "evidence": "The response directly audits the provided TaskFlow copy without asking for it, opening with 'Your landing page has several conversion-killing problems.'"
+    },
+    {
+      "text": "Runs a structured (≥8-point) conversion audit against the real copy",
+      "passed": false,
+      "evidence": "The response identifies 7 numbered issues plus a summary table, but the audit points total 7 structured sections — one short of the ≥8-point requirement."
+    },
+    {
+      "text": "References specific problems in the provided copy (e.g. vague 'powerful/seamless' language, three competing CTAs, no proof)",
+      "passed": true,
+      "evidence": "The response directly quotes 'powerful, innovative, and seamless solution,' calls out the three CTAs ('Learn More,' 'Sign Up,' and 'Contact Sales'), and flags the complete absence of proof/testimonials."
+    },
+    {
+      "text": "Produces a prioritized fix list ordered by impact/effort",
+      "passed": true,
+      "evidence": "The response ends with a 'Summary: What to Fix First' table listing 7 items by Priority and Impact, ordered from High to Low impact."
+    },
+    {
+      "text": "Includes the low-traffic A/B testing caveat",
+      "passed": false,
+      "evidence": "The response does not mention A/B testing at all, let alone include a caveat about needing sufficient traffic for valid test results."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 2,
+    "total": 5,
+    "pass_rate": 0.60
+  }
+}

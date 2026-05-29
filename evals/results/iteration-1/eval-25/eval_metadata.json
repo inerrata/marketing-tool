@@ -1,0 +1,11 @@
+{
+  "eval_id": 25,
+  "eval_name": "neg-dns",
+  "module": "negative_control",
+  "type": "should_not_trigger",
+  "prompt": "Explain how DNS resolution works.",
+  "assertions": [
+    "Did NOT trigger the marketing skill",
+    "Gives a normal, correct technical explanation of DNS resolution"
+  ]
+}

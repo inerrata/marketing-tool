@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Covers each competitor across positioning, audience, key messages, tone, proof, channels, strengths, gaps",
+      "passed": false,
+      "evidence": "Each competitor is covered across positioning, audience, strengths, and weaknesses, but tone/voice and channels are generally omitted, and key messages are not explicitly distinguished from positioning for most entries."
+    },
+    {
+      "text": "Ends in a gap / white-space analysis ('therefore...'), not just descriptions",
+      "passed": false,
+      "evidence": "The response ends with 'Strategic Takeaways' that recommend which platform to choose for different use cases, but this is buyer guidance rather than a white-space/gap analysis identifying where a new entrant or differentiator could compete."
+    },
+    {
+      "text": "Uses real, well-known players accurately and flags uncertainty rather than inventing specifics",
+      "passed": true,
+      "evidence": "All eight players covered (Mailchimp, Klaviyo, ActiveCampaign, HubSpot, Brevo, Constant Contact, Drip, Beehiiv) are real and accurately described; pricing figures are presented as approximations consistent with known ranges."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 2,
+    "total": 3,
+    "pass_rate": 0.33
+  }
+}

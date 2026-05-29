@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Identifies commercial-investigation intent and maps it to a comparison/listicle format",
+      "passed": true,
+      "evidence": "The 'Search Intent' section explicitly labels intent as 'Commercial Investigation' and the content type is specified as 'Listicle / Comparison Guide'."
+    },
+    {
+      "text": "Title under 60 chars and meta description 150-160 chars",
+      "passed": false,
+      "evidence": "The recommended title 'Best CRM for Nonprofits in 2026: Top Tools to Manage Donors, Volunteers & More' is ~76 characters (over 60), and the meta description example given ('Find the best CRM for nonprofits in 2026. Compare features, pricing & free options for donor management.') is ~104 characters (under 150)."
+    },
+    {
+      "text": "Includes an H2/H3 outline and People-Also-Ask questions",
+      "passed": true,
+      "evidence": "A full H2/H3 outline is provided throughout the content structure section, and the FAQ section includes five H3 questions that align with common People-Also-Ask queries for this keyword."
+    },
+    {
+      "text": "Includes a differentiation angle, E-E-A-T notes, internal links, and a CTA",
+      "passed": true,
+      "evidence": "Content gaps/differentiation angles are noted in the SERP analysis section, an E-E-A-T section is included, internal linking opportunities are listed, and a CTA strategy table appears at the end."
+    },
+    {
+      "text": "Flags that real search volume/difficulty need a tool rather than inventing numbers",
+      "passed": false,
+      "evidence": "The keyword research table presents specific volume figures (e.g., 'best crm for nonprofits: 2,400', 'nonprofit crm software: 1,900') as estimates without flagging that these require verification via a real SEO tool."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 2,
+    "total": 5,
+    "pass_rate": 0.60
+  }
+}

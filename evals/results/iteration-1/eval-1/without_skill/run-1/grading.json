@@ -1,0 +1,45 @@
+{
+  "expectations": [
+    {
+      "text": "Decided the marketing skill applies and used it",
+      "passed": false,
+      "evidence": "No skill is available in the without_skill arm; the response was generated without any skill invocation."
+    },
+    {
+      "text": "Subject line is present and under ~50 characters",
+      "passed": true,
+      "evidence": "Subject '[First name], losing 5% of customers per month?' is approximately 44 characters, under ~50."
+    },
+    {
+      "text": "Includes preview/preheader text complementary to the subject",
+      "passed": false,
+      "evidence": "The response contains no preview or preheader text; it goes directly from the subject line to the salutation."
+    },
+    {
+      "text": "Opening is relevance-first (no generic throat-clearing like 'I hope this finds you well')",
+      "passed": true,
+      "evidence": "The email opens with 'Most SaaS founders I talk to know churn is a problem — but they're usually fighting it too late,' which is relevance-first with no generic throat-clearing."
+    },
+    {
+      "text": "Body is one idea and under ~120 words",
+      "passed": false,
+      "evidence": "The email body contains multiple ideas (behavioral signals, bullet-point feature list, integrations, ARR qualification) and is well over 120 words."
+    },
+    {
+      "text": "Has exactly one low-friction CTA (yes/no or permission ask), not a 30-minute meeting demand",
+      "passed": true,
+      "evidence": "'Worth a 20-minute call this week?' is phrased as a yes/no question, which satisfies the low-friction framing even though it is not a pure permission ask."
+    },
+    {
+      "text": "States assumptions inline rather than blocking with questions (scoped/low-stakes task)",
+      "passed": false,
+      "evidence": "No assumptions are stated anywhere in the response; the email invents specifics (ARR range, integrations, feature details) without flagging them as assumptions."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 4,
+    "total": 7,
+    "pass_rate": 0.43
+  }
+}

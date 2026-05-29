@@ -1,0 +1,1 @@
+{"triggered": true, "reason": "The user is asking for a conversion audit of a specific page, which is explicitly covered by the skill's CRO reference and its Gate B rule for audit tasks.", "references_read": ["cro.md"]}

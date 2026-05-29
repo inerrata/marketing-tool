@@ -1,0 +1,12 @@
+{
+  "eval_id": 6,
+  "eval_name": "value-prop-mealprep",
+  "module": "brand-messaging",
+  "type": "happy_path",
+  "prompt": "I run a meal-prep service for busy parents; the main thing is it's ready in 5 minutes and uses no ultra-processed ingredients. Write me a value proposition.",
+  "assertions": [
+    "Proceeded without Gate A because audience + differentiator were supplied",
+    "Produced an outcome-led, specific value proposition",
+    "Is differentiated enough to pass the 'only this brand could say it' test"
+  ]
+}

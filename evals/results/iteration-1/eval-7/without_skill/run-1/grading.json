@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Defines 3-5 specific content pillars",
+      "passed": true,
+      "evidence": "The response defines 5 content pillars (Education 35%, Product/Feature 20%, Social Proof 20%, Thought Leadership 15%, Community/Culture 10%) in a clearly labeled table."
+    },
+    {
+      "text": "Maps content to funnel stages (TOFU/MOFU/BOFU)",
+      "passed": false,
+      "evidence": "The calendar does not map content to funnel stages (TOFU/MOFU/BOFU); monthly themes have business goals but the individual calendar rows contain no funnel-stage field or labeling."
+    },
+    {
+      "text": "Applies a value-heavy content mix ratio",
+      "passed": false,
+      "evidence": "Education is only 35% of the mix, with Product/Feature at 20% and Social Proof at 20%; the combined value-giving content is not clearly weighted toward 70-80% as a value-heavy ratio would require."
+    },
+    {
+      "text": "Calendar includes the reference fields: pillar, funnel stage, format, working title, CTA",
+      "passed": false,
+      "evidence": "The calendar table columns are Day/Channel/Content Type/Title-Topic/CTA — there is no pillar column linking rows to the defined pillars, and no funnel stage column."
+    },
+    {
+      "text": "Asks 2-3 scoping questions or states explicit assumptions (medium stakes)",
+      "passed": true,
+      "evidence": "The response includes a clearly labeled 'Assumptions Made' section covering company stage, product, goals, channels, team capacity, and audience, satisfying the stated-assumptions branch of this assertion."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 3,
+    "total": 5,
+    "pass_rate": 0.40
+  }
+}

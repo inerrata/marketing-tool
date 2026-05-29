@@ -1,0 +1,7 @@
+{
+  "expectations": [
+    {"text": "Did NOT trigger the marketing skill", "passed": true, "evidence": "trigger_decision.json shows triggered=false, reasoning that DNS resolution is a networking/infrastructure topic entirely unrelated to marketing."},
+    {"text": "Gives a normal, correct technical explanation of DNS resolution", "passed": true, "evidence": "The response accurately explains the full DNS resolution process through 8 steps from browser cache to authoritative name server, covers key record types, and explains TTL and DNSSEC correctly."}
+  ],
+  "summary": {"passed": 2, "failed": 0, "total": 2, "pass_rate": 1.00}
+}

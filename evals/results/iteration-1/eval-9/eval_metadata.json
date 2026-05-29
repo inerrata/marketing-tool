@@ -1,0 +1,13 @@
+{
+  "eval_id": 9,
+  "eval_name": "launch-habit-app",
+  "module": "campaigns",
+  "type": "multi_module_gate_A",
+  "prompt": "Help me launch my new habit-tracking app.",
+  "assertions": [
+    "Asked 2-3 scoping questions (audience, goal/metric, timeline) and/or led with a one-page campaign brief",
+    "Provides a phased pre-launch / launch / post-launch structure",
+    "Includes an asset checklist",
+    "Pulls multiple modules (campaign + copy + email + measurement) without sprawling"
+  ]
+}

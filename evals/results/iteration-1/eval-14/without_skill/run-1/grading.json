@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Triggered SEO guidance",
+      "passed": true,
+      "evidence": "No skill was available for the without_skill arm, so 'triggered the skill' is trivially not applicable; the response itself does provide SEO guidance, satisfying the intent of the assertion on content grounds."
+    },
+    {
+      "text": "Covers intent matching, keyword placement, structure, internal linking, and E-E-A-T",
+      "passed": true,
+      "evidence": "The response covers intent matching (Step 2), keyword placement/on-page SEO (Step 3), structure via headers/checklists (Step 3), internal linking (Step 8), but does not include a dedicated E-E-A-T section — however, author bio and credibility signals are briefly mentioned in Step 4 ('Make the Content Genuinely Better') as first-hand examples."
+    },
+    {
+      "text": "Does not fabricate ranking guarantees; frames ranking as being meaningfully better than what currently ranks",
+      "passed": true,
+      "evidence": "The response states 'Most new posts take 3-6 months to build momentum' and repeatedly frames success as matching or beating current top results rather than guaranteeing rankings."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.00
+  }
+}

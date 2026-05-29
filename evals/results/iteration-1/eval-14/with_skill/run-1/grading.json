@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Triggered SEO guidance",
+      "passed": true,
+      "evidence": "trigger_decision.json shows triggered=true, and the response is a comprehensive SEO ranking guide for a blog post."
+    },
+    {
+      "text": "Covers intent matching, keyword placement, structure, internal linking, and E-E-A-T",
+      "passed": true,
+      "evidence": "The response covers intent matching (Step 2), keyword placement (Step 3 on-page section), structure/scannability (Step 3), internal linking (Step 5), and E-E-A-T (Step 4) as distinct sections."
+    },
+    {
+      "text": "Does not fabricate ranking guarantees; frames ranking as being meaningfully better than what currently ranks",
+      "passed": true,
+      "evidence": "The response explicitly states 'SEO takes time' with a 3-6 month caveat, and repeatedly frames ranking success as requiring you to 'beat the content that currently ranks' rather than guaranteeing outcomes."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.00
+  }
+}

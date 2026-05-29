@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Produces a 3-5 email welcome flow with a logical progression (welcome -> story/why -> best value -> social proof -> soft offer)",
+      "passed": false,
+      "evidence": "The response only asks three clarifying questions and does not produce any email sequence; no flow or progression is present."
+    },
+    {
+      "text": "Specifies timing for each email",
+      "passed": false,
+      "evidence": "No emails are written in this response, so no timing is specified."
+    },
+    {
+      "text": "Has one CTA per email",
+      "passed": false,
+      "evidence": "No emails are written in this response, so no CTAs are present."
+    },
+    {
+      "text": "May ask about the newsletter topic/audience",
+      "passed": true,
+      "evidence": "The response asks three targeted questions about the subscriber audience, desired outcome, and newsletter promise before proceeding to write the sequence."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 3,
+    "total": 4,
+    "pass_rate": 0.25
+  }
+}

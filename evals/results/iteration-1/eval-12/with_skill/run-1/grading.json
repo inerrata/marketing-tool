@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Covers each competitor across positioning, audience, key messages, tone, proof, channels, strengths, gaps",
+      "passed": true,
+      "evidence": "Each of the six main competitors is analyzed in a table covering target audience, core messages, tone/voice, offer/pricing (proof), channels, strengths, and gaps/weaknesses."
+    },
+    {
+      "text": "Ends in a gap / white-space analysis ('therefore...'), not just descriptions",
+      "passed": true,
+      "evidence": "The response closes with a 'Gap Analysis — Where the White Space Is' section and 'Strategic Takeaways' that make explicit 'therefore' recommendations based on the competitive landscape."
+    },
+    {
+      "text": "Uses real, well-known players accurately and flags uncertainty rather than inventing specifics",
+      "passed": true,
+      "evidence": "All six main players (Mailchimp, Klaviyo, ActiveCampaign, HubSpot, ConvertKit/Kit, Brevo) are real and well-known, with accurate positioning and an implicit note that specifics like pricing should be verified."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.00
+  }
+}

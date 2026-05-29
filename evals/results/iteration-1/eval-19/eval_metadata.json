@@ -1,0 +1,14 @@
+{
+  "eval_id": 19,
+  "eval_name": "paid-ads-tracking",
+  "module": "measurement",
+  "type": "happy_path",
+  "prompt": "What should I track for a new paid ads channel?",
+  "assertions": [
+    "Names a primary metric tied to the goal (CAC or ROAS)",
+    "Includes leading indicators (CTR, CPC, conversion rate)",
+    "Shows formulas with their inputs",
+    "Warns against vanity metrics such as impressions",
+    "Includes the attribution-is-imperfect caveat"
+  ]
+}

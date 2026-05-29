@@ -1,0 +1,13 @@
+{
+  "eval_id": 21,
+  "eval_name": "notion-solo-founder",
+  "module": "multi_module",
+  "type": "multi_module",
+  "prompt": "I'm a solo founder launching a paid Notion-template business next month. I have no audience yet. What's my plan?",
+  "assertions": [
+    "Synthesizes GTM (research + channels + acquisition motion), content, email, and launch",
+    "Is sequenced and focused (one channel/motion first, not everything at once)",
+    "Asks a couple of scoping questions or states clear assumptions",
+    "Stays structured rather than a generic info-dump"
+  ]
+}

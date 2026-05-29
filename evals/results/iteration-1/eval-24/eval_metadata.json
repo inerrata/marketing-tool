@@ -1,0 +1,11 @@
+{
+  "eval_id": 24,
+  "eval_name": "neg-cat-name",
+  "module": "negative_control",
+  "type": "should_not_trigger",
+  "prompt": "What's a good name for my pet cat? She's grey and very lazy.",
+  "assertions": [
+    "Did NOT trigger the marketing skill (not a brand/product naming task)",
+    "Gives a normal, friendly set of cat name ideas"
+  ]
+}

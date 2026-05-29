@@ -1,0 +1,9 @@
+{
+  "expectations": [
+    {"text": "Synthesizes GTM (research + channels + acquisition motion), content, email, and launch", "passed": true, "evidence": "The response covers positioning/niche research, three acquisition channels (Reddit, social, direct outreach), a lead magnet and email sequence, and a phased launch plan with a week-by-week action plan."},
+    {"text": "Is sequenced and focused (one channel/motion first, not everything at once)", "passed": true, "evidence": "The response explicitly says 'Don't spread yourself thin. Pick one or two channels and go deep' and structures the plan in focused phases with clear sequencing."},
+    {"text": "Asks a couple of scoping questions or states clear assumptions", "passed": false, "evidence": "The response opens with 'Congratulations on the launch. Here's a realistic, prioritized plan' with no stated assumptions and no scoping questions asked of the user."},
+    {"text": "Stays structured rather than a generic info-dump", "passed": true, "evidence": "The response is organized into three named phases plus a week-by-week 30-day action plan and a 'What NOT to Do' section with headers and bullets throughout."}
+  ],
+  "summary": {"passed": 3, "failed": 1, "total": 4, "pass_rate": 0.75}
+}

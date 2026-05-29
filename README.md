@@ -1,26 +1,30 @@
 # marketing-skill
 
-A comprehensive, full-stack **marketing skill for Claude** — copywriting, brand & messaging, content strategy, campaigns & GTM, research, SEO, email/lifecycle, CRO, and measurement, in one installable package.
+> A full-stack **marketing skill for Claude** — copy, brand, content, campaigns, research, SEO, lifecycle, CRO, and measurement — that stays specific, asks before it guesses, and refuses to fake proof.
 
-Unlike single-file marketing prompts, this skill uses **progressive disclosure**: a lightweight routing layer (`SKILL.md`) that loads 9 purpose-built reference modules only when they're relevant. You get the depth of nine specialist playbooks without bloating the context window on every request.
+![stars](https://img.shields.io/github/stars/inerrata/marketing-tool?style=flat)
+![last commit](https://img.shields.io/github/last-commit/inerrata/marketing-tool)
+![license](https://img.shields.io/badge/license-MIT-green)
+![format](https://img.shields.io/badge/format-SKILL.md-blue)
+![evals](https://img.shields.io/badge/evals-26%20prompts-blue)
+![with--skill](https://img.shields.io/badge/with--skill-82.7%25-brightgreen)
+![delta](https://img.shields.io/badge/vs%20baseline-%2B20.4pp-brightgreen)
 
-Compatible with **Claude Code, Claude.ai, the Claude API, Cursor, Codex CLI, Gemini CLI**, and any tool that supports the open `SKILL.md` format.
+Unlike single-file marketing prompts, this skill uses **progressive disclosure**: a lightweight routing layer (`SKILL.md`) that loads 9 purpose-built reference modules only when relevant. The depth of nine specialist playbooks, none of the context bloat. Works with **Claude Code, Claude.ai, the Claude API, Cursor, Codex CLI, Gemini CLI**, and anything that reads the open `SKILL.md` format.
 
 ---
 
 ## Table of contents
 
-- [Why this exists](#why-this-exists)
-- [Who it's for](#who-its-for)
-- [What it covers](#what-it-covers)
+- [Before / After](#before--after)
+- [Benchmarks](#benchmarks)
+- [Install](#install)
+- [What you get](#what-you-get)
 - [Use cases](#use-cases)
 - [How it works](#how-it-works)
 - [The brief-first philosophy](#the-brief-first-philosophy)
 - [The universal quality bar](#the-universal-quality-bar)
-- [A worked example](#a-worked-example)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Validation & evals](#validation--evals)
+- [Evaluation](#evaluation)
 - [Design principles](#design-principles)
 - [FAQ](#faq)
 - [Roadmap](#roadmap)
@@ -29,174 +33,47 @@ Compatible with **Claude Code, Claude.ai, the Claude API, Cursor, Codex CLI, Gem
 
 ---
 
-## Why this exists
-
-Most "marketing prompts" fail in one of two ways. They're either **too generic** — a wall of best-practice platitudes that produces copy any competitor could have written — or **too narrow** — a single template that only handles one task and breaks the moment your need shifts.
-
-This skill is built around a different premise: **good marketing is specific, evidence-led, and built around the reader, not the brand.** It encodes that discipline as a set of frameworks, checklists, and quality gates, then routes each request to the right one. The result is output that's ready to use, grounded in a real audience and goal, and honest about what it doesn't know.
-
-It also refuses to do the things that quietly destroy trust: it won't fabricate statistics, invent testimonials, or audit a landing page it has never seen.
-
----
-
-## Who it's for
-
-- **Founders & solo operators** who need a competent marketing partner without hiring one — launch plans, landing copy, positioning, first-100-customers playbooks.
-- **Marketers & growth teams** who want a rigorous second brain for briefs, audits, campaign concepts, and measurement — and a consistent quality bar across the team.
-- **Agencies & freelancers** producing client work who need to move fast without sounding generic.
-- **Product & eng teams** writing their own homepage, onboarding emails, or changelog copy and want it to actually convert.
-- **Anyone** who has ever stared at a blank page that needed to sell something.
-
-No marketing vocabulary required — the skill triggers on intent ("nobody knows my store exists, how do I get customers?"), not just keywords.
-
----
-
-## What it covers
-
-| Module | Covers |
-|---|---|
-| **Copywriting** | Ads, emails, landing/sales pages, homepages, CTAs, taglines, social posts, microcopy — PAS / AIDA / BAB / 4Ps / FAB frameworks, 10-point editing checklist |
-| **Brand & messaging** | Positioning statements, value propositions, messaging hierarchy, brand voice & tone, naming, message testing |
-| **Content strategy** | Content pillars, funnel mapping, calendars, content ratios, repurposing, distribution, audits |
-| **Campaigns & GTM** | Campaign briefs, concept development, phased launches, go-to-market plans, asset checklists |
-| **Research** | Audience personas, ICPs, segmentation, jobs-to-be-done, competitor gap analysis, voice-of-customer |
-| **SEO** | Search intent, keyword strategy, content briefs, on-page optimization, E-E-A-T |
-| **Email & lifecycle** | Welcome / nurture / sales / onboarding / win-back / abandoned-cart sequences, newsletters, deliverability |
-| **CRO** | Conversion audits, the conversion equation, A/B testing methodology, high-impact fixes |
-| **Measurement** | Metrics by goal, AARRR funnel, CAC / LTV / ROAS formulas, attribution models, reporting |
-
----
-
-## Use cases
-
-Concrete scenarios, the kind of prompt that triggers them, and what you get back.
-
-### Launching something
-
-| You want to… | Say something like… | You get |
-|---|---|---|
-| Launch a product with no plan yet | *"Help me launch my new habit-tracking app."* | Scoping questions (audience, goal, timeline), then a one-page campaign brief + a phased pre-/launch/post timeline + an asset checklist |
-| Get your first customers from zero | *"Nobody knows my store exists. How do I get my first 100 customers?"* | A focused acquisition plan — one channel/motion to start, matched to your audience, with proof and content angles (not a vague pep talk) |
-| Go to market as a solo founder | *"I'm launching a paid Notion-template business next month, no audience yet — what's my plan?"* | A sequenced GTM plan synthesizing research + channel choice + content + email + launch, focused on one motion first |
-
-### Writing copy that converts
-
-| You want to… | Say something like… | You get |
-|---|---|---|
-| Write a cold outreach email | *"Write a cold email to SaaS founders for my churn-reduction tool."* | A tight email: subject + preview text, relevance-first opening, one idea, one low-friction CTA, assumptions stated |
-| Get homepage hero copy | *"I need words for the top of my homepage — it's a tool that schedules social posts."* | Ready-to-paste headline + subheadline + CTA options, outcome-led, on a stated assumption you can correct |
-| Generate subject-line options | *"Give me 3 Black Friday subject lines for a coffee subscription brand."* | Three lines taking genuinely different angles (curiosity / benefit / urgency), each labeled and length-checked |
-| Avoid fake proof | *"Write a landing page with impressive testimonials and stats."* | The page — with clearly-marked placeholders for proof and an explanation of why fabricating it breaks trust (and law) |
-
-### Strategy & positioning
-
-| You want to… | Say something like… | You get |
-|---|---|---|
-| Nail your positioning | *"Write a positioning statement for a PM tool aimed at agencies."* | 2–3 sharp questions first (narrowest audience, real differentiator, true alternative), then a defensible statement — not a confident guess |
-| Define your brand voice | *"Help me define my brand voice."* | A short discovery, then a voice profile with do/don't dimensions and tone-by-moment guidance |
-| Write a value proposition | *"Meal-prep for busy parents, ready in 5 min, no ultra-processed ingredients — write my value prop."* | An outcome-led value prop specific enough that only your brand could say it |
-
-### Content & SEO
-
-| You want to… | Say something like… | You get |
-|---|---|---|
-| Plan a content calendar | *"Build a content calendar for a B2B fintech startup."* | 3–5 content pillars, funnel-stage mapping, a value-heavy mix, and a calendar with pillar / stage / format / title / CTA |
-| Know what to post | *"What should I post on LinkedIn for my consulting business?"* | Pillars + format guidance tied to LinkedIn norms and funnel stages — not "post valuable content" |
-| Write an SEO brief | *"Write an SEO brief targeting 'best crm for nonprofits'."* | Intent analysis → format, title/meta, H2/H3 outline, People-Also-Ask, differentiation angle, E-E-A-T notes — with a flag that real volume/difficulty need a tool |
-
-### Lifecycle & retention
-
-| You want to… | Say something like… | You get |
-|---|---|---|
-| Build a welcome sequence | *"Design a welcome sequence for my newsletter."* | A 3–5 email flow with timing and one CTA each, progressing welcome → story → value → proof → soft offer |
-| Win back dormant users | *"Plan a win-back sequence for users inactive 60 days."* | A re-engagement flow that acknowledges the silence, gives a reason to return, and suppresses non-responders to protect deliverability |
-
-### Audit, optimize & measure
-
-| You want to… | Say something like… | You get |
-|---|---|---|
-| Audit a page | *"My pricing page isn't converting — audit it."* | A request for the actual page first (paste/URL/screenshot) + goal + audience; with the asset, a structured conversion audit + prioritized fixes |
-| Analyze competitors | *"Competitor analysis of the main email-marketing players."* | Per-competitor positioning/audience/messaging/proof/gaps, ending in a white-space opportunity ("therefore…") |
-| Decide what to measure | *"What should I track for a new paid ads channel?"* | Primary metric tied to the goal (CAC/ROAS), leading indicators, formulas, a vanity-metric warning, and the attribution caveat |
-| Sanity-check unit economics | *"Is a $400 CAC good if customers pay $50/mo for ~18 months?"* | The LTV and LTV:CAC math shown, interpreted against the ~3:1 guideline, with the caveats that benchmarks and gross margin matter |
-
----
-
-## How it works
-
-```
-marketing/
-├── SKILL.md              ← routing layer, brief-first gates, quality bar
-└── references/
-    ├── copywriting.md
-    ├── brand-messaging.md
-    ├── content-strategy.md
-    ├── campaigns.md
-    ├── research.md
-    ├── seo.md
-    ├── email-lifecycle.md
-    ├── cro.md
-    └── measurement.md
-```
-
-At session start, only the `SKILL.md` **description** (~100 tokens) is in context. When a marketing task is detected, the full `SKILL.md` loads and routes to the relevant reference module(s). Modules not needed for the task never load. A multi-area request (e.g. a launch) pulls several modules and synthesizes them.
-
-Two hard gates enforce quality:
-
-- **Gate A — Strategy foundations** (positioning, value prop, messaging hierarchy, brand voice, GTM): asks 2–3 sharp questions before writing rather than producing a confident guess on unverified inputs. These are load-bearing — everything downstream inherits their flaws.
-- **Gate B — Audits / "improve my X"**: requests the actual asset before auditing. It won't invent the contents of a page it hasn't seen and then critique its own invention.
-
-Everything else **scales to stakes**: big ambiguous strategy work gets a couple of scoping questions first; a concrete copy deliverable (a hero, an ad, subject lines) is drafted immediately on a clearly-stated assumption, with optional sharpening questions *after* the draft — because a draft you can react to beats an interrogation.
-
----
-
-## The brief-first philosophy
-
-Marketing output is only as good as its inputs. Before producing anything, the skill establishes (or explicitly infers and flags) five things:
-
-1. **Audience** — who specifically is this for, and what do they believe right now?
-2. **Goal** — the one action this should drive.
-3. **Offer** — what's being marketed, and the single most important thing about it.
-4. **Proof** — the evidence behind the claims.
-5. **Constraint** — channel, length, tone, brand rules.
-
-The audience and the goal are never silently guessed — they're load-bearing in every task. When the skill does make an assumption, it states it out loud ("Assuming [X]; adjust if wrong") so you can correct it in one line.
-
----
-
-## The universal quality bar
-
-Every deliverable is checked against this before it's handed back:
-
-- **Specificity** — concrete claims, numbers, and outcomes replace vague adjectives ("amazing," "powerful," "seamless").
-- **Reader-first** — leads with the reader's problem or desire, not the product's feature list.
-- **One message per piece** — every asset has exactly one job.
-- **Proof over claims** — every significant claim has support, or is flagged as needing it.
-- **Mechanics** — active voice, short sentences, filler cut, read-aloud test.
-- **Earn the next line** — the headline's only job is to get the subhead read.
-- **Honesty** — no fabricated stats, fake testimonials, or invented credentials.
-
----
-
-## A worked example
+## Before / After
 
 **Prompt:** *"I need words for the top of my homepage — it's a tool that schedules social posts."*
 
-A generic assistant either writes vague copy ("Welcome to the future of social media!") or stalls with a list of questions. This skill recognizes a **copy deliverable**, picks the most likely audience, states it, and ships usable copy:
+| ❌ Without the skill | ✅ With the skill |
+|---|---|
+| *"Welcome to the future of social media management! Our powerful, all-in-one platform helps you streamline your workflow and supercharge your presence."* | *Assuming small businesses / solo creators managing their own social presence — adjust if you mean agencies.*<br><br>**Headline:** Schedule a week of social posts in 20 minutes.<br>**Subhead:** Plan, schedule, and publish across every channel — so you show up consistently without living on your phone.<br>**CTA:** Start scheduling free |
+| Vague adjectives, no audience, no CTA, says nothing only-this-product could say. | Outcome-led headline, real subhead + CTA, one stated assumption, sharpening questions offered *after* the draft. |
 
-> *Assuming your audience is small businesses / solo creators managing their own social presence; adjust if you're targeting agencies.*
->
-> **Headline:** Schedule a week of social posts in 20 minutes.
-> **Subheadline:** Plan, schedule, and publish across every channel — so you show up consistently without living on your phone.
-> **CTA:** Start scheduling free
->
-> *A few things that would sharpen this further: who's your core user, which channels do you support, and is there a free trial?*
-
-Outcome-led headline, a real subhead and CTA, one stated assumption, and the sharpening questions placed *after* the draft — not in front of it.
+That difference is measurable — see below.
 
 ---
 
-## Installation
+## Benchmarks
+
+Each of 26 eval prompts was run **with the skill and without it (baseline)**, then graded against per-prompt assertions. Full method, per-eval table, and raw outputs in [`benchmarks/`](benchmarks) and [`evals/`](evals).
+
+| Metric | With skill | Baseline | Delta |
+|---|:--:|:--:|:--:|
+| **Mean pass rate** | **82.7%** | 62.3% | **+20.4 pp** |
+| Evals where skill ≥ baseline | 23 / 26 | — | — |
+| Gates (A & B) + negative controls | ✅ correct | n/a | — |
+
+**Where it moves the needle most:**
+
+| Eval | With | Base | Why |
+|---|:--:|:--:|---|
+| positioning statement (Gate A) | 1.00 | 0.00 | asks the load-bearing questions instead of guessing |
+| honesty probe | 1.00 | 0.25 | placeholders, never fabricated testimonials/stats |
+| homepage hero | 1.00 | 0.25 | drafts outcome-led copy on a stated assumption |
+| competitor analysis | 1.00 | 0.33 | ends in a white-space gap, not just description |
+| pricing-page audit (Gate B) | 1.00 | 0.67 | demands the real asset before auditing |
+| cold email | 0.86 | 0.43 | one idea, one low-friction CTA, relevance-first |
+
+**Negative controls** ("name my cat", "explain DNS", "thank-you note to grandma") correctly did **not** trigger the skill — no false positives. A few weak spots (welcome-sequence, LinkedIn) are tracked openly in [`benchmarks/README.md`](benchmarks/README.md).
+
+📊 **Browse every output and grade:** open [`evals/review.html`](evals/review.html) in a browser.
+
+---
+
+## Install
 
 ### Claude Code (global)
 
@@ -215,45 +92,125 @@ cp -r marketing-tool/_unpacked/marketing .claude/skills/marketing
 
 ### Claude.ai
 
-Download `marketing.skill` from the repo (or [Releases](../../releases)) and upload it under **Settings → Capabilities → Skills**. Requires a Pro, Max, Team, or Enterprise plan.
-
-The `marketing.skill` file is just a zip of the `marketing/` folder — you can repackage it yourself from `_unpacked/marketing/` with any zip tool.
+Download `marketing.skill` and upload it under **Settings → Capabilities → Skills** (Pro/Max/Team/Enterprise). The file is just a zip of `_unpacked/marketing/` — repackage it yourself with any zip tool.
 
 ---
 
-## Usage
+## What you get
 
-Just ask naturally — the skill triggers without the word "marketing":
-
-```
-Write a cold email to SaaS founders for my churn-reduction tool
-Help me launch my habit-tracking app
-My pricing page isn't converting — what's wrong with it?
-Build a content calendar for a B2B fintech startup
-Write a positioning statement for a PM tool aimed at agencies
-What should I track for a new paid ads channel?
-Nobody knows my store exists — how do I get my first 100 customers?
-```
-
-On high-stakes tasks (positioning, launches) the skill asks 2–3 focused questions before writing. On lower-stakes tasks (a subject line, a social post) it states its assumptions and proceeds.
+| Module | Covers |
+|---|---|
+| **Copywriting** | Ads, emails, landing/sales pages, homepages, CTAs, taglines, social posts, microcopy — PAS / AIDA / BAB / 4Ps / FAB, 10-point editing checklist |
+| **Brand & messaging** | Positioning, value propositions, messaging hierarchy, brand voice & tone, naming, message testing |
+| **Content strategy** | Content pillars, funnel mapping, calendars, content ratios, repurposing, distribution, audits |
+| **Campaigns & GTM** | Campaign briefs, concept development, phased launches, go-to-market plans, asset checklists |
+| **Research** | Personas, ICPs, segmentation, jobs-to-be-done, competitor gap analysis, voice-of-customer |
+| **SEO** | Search intent, keyword strategy, content briefs, on-page optimization, E-E-A-T |
+| **Email & lifecycle** | Welcome / nurture / sales / onboarding / win-back / abandoned-cart sequences, newsletters, deliverability |
+| **CRO** | Conversion audits, the conversion equation, A/B testing methodology, high-impact fixes |
+| **Measurement** | Metrics by goal, AARRR funnel, CAC / LTV / ROAS formulas, attribution, reporting |
 
 ---
 
-## Validation & evals
+## Use cases
 
-The skill ships with a **26-prompt eval set** (`evals.json`) covering every module, plus phrasing variations, both gate checks (A and B), multi-module synthesis, implicit triggers, an honesty probe, and **negative controls** — prompts that should *not* trigger the skill (e.g. "what's a good name for my cat?"), used to measure false-positive triggering.
+Concrete scenarios, the prompt that triggers them, and what you get back.
 
-The harness runs each prompt **both with and without the skill** (a baseline), records whether the skill chose to trigger, and grades each output against per-prompt assertions. This measures two things at once:
+### Launching something
 
-- **Triggering accuracy** — does it fire when it should, and stay quiet when it shouldn't?
-- **Output quality** — given it fired, does the deliverable meet the bar?
+| You want to… | Say… | You get |
+|---|---|---|
+| Launch a product with no plan | *"Help me launch my habit-tracking app."* | Scoping questions, then a one-page brief + phased pre-/launch/post timeline + asset checklist |
+| First customers from zero | *"Nobody knows my store exists. How do I get my first 100 customers?"* | A focused acquisition plan — one channel/motion to start, matched to audience |
+| GTM as a solo founder | *"Launching a paid Notion-template business next month, no audience — what's my plan?"* | A sequenced GTM plan (research + channel + content + email + launch), one motion first |
 
-In testing, Gate A and Gate B fired correctly, the negative controls correctly declined to trigger, and the happy-path deliverables passed their assertions. (One finding — a homepage hero being over-gated instead of drafted — was fixed by separating *copy deliverables* from *strategy foundations*; it now passes its checks.)
+### Writing copy that converts
 
-To run the eval pass yourself via the **skill-creator** skill in Claude Code:
+| You want to… | Say… | You get |
+|---|---|---|
+| Cold outreach email | *"Cold email to SaaS founders for my churn-reduction tool."* | Subject + preview, relevance-first opening, one idea, one low-friction CTA |
+| Homepage hero | *"Words for the top of my homepage — a tool that schedules social posts."* | Headline + subhead + CTA options, outcome-led, on a stated assumption |
+| Subject-line options | *"3 Black Friday subject lines for a coffee subscription."* | Three distinct angles (curiosity / benefit / urgency), labeled, length-checked |
+| Avoid fake proof | *"Write a landing page with impressive testimonials and stats."* | The page, with marked placeholders + why fabricating proof breaks trust and law |
+
+### Strategy & positioning
+
+| You want to… | Say… | You get |
+|---|---|---|
+| Nail positioning | *"Positioning statement for a PM tool aimed at agencies."* | 2–3 sharp questions first, then a defensible statement — not a guess |
+| Define brand voice | *"Help me define my brand voice."* | Short discovery, then a voice profile with do/don't dimensions and tone-by-moment |
+| Value proposition | *"Meal-prep for busy parents, ready in 5 min, no ultra-processed — write my value prop."* | An outcome-led value prop only your brand could say |
+
+### Content, SEO, lifecycle, measurement
+
+| You want to… | Say… | You get |
+|---|---|---|
+| Content calendar | *"Content calendar for a B2B fintech startup."* | 3–5 pillars, funnel mapping, value-heavy mix, calendar w/ pillar/stage/format/title/CTA |
+| SEO brief | *"SEO brief targeting 'best crm for nonprofits'."* | Intent → format, title/meta, outline, People-Also-Ask, E-E-A-T, with a real-data flag |
+| Welcome sequence | *"Design a welcome sequence for my newsletter."* | 3–5 email flow with timing + one CTA each |
+| Win-back | *"Win-back sequence for users inactive 60 days."* | Re-engagement flow + suppression of non-responders to protect deliverability |
+| Audit a page | *"My pricing page isn't converting — audit it."* | Asks for the real page first, then a structured audit + prioritized fixes |
+| What to measure | *"What should I track for a new paid ads channel?"* | Primary metric (CAC/ROAS), leading indicators, formulas, vanity-metric + attribution caveats |
+| Unit economics | *"Is a $400 CAC good if customers pay $50/mo for ~18 months?"* | LTV + LTV:CAC math shown, read against ~3:1, with the caveats |
+
+---
+
+## How it works
 
 ```
-Use the skill-creator skill to run a full eval pass on ./marketing using ./evals.json.
+marketing/
+├── SKILL.md              ← routing layer, brief-first gates, quality bar
+└── references/
+    ├── copywriting.md      ├── research.md         ├── email-lifecycle.md
+    ├── brand-messaging.md  ├── seo.md              ├── cro.md
+    ├── content-strategy.md ├── campaigns.md        └── measurement.md
+```
+
+At session start, only the `SKILL.md` **description** (~100 tokens) is in context. When a marketing task is detected, the full `SKILL.md` loads and routes to the relevant module(s); unused modules never load. Multi-area requests pull several and synthesize.
+
+Two hard gates enforce quality:
+
+- **Gate A — Strategy foundations** (positioning, value prop, voice, GTM): asks 2–3 sharp questions before writing. These are load-bearing — everything downstream inherits their flaws.
+- **Gate B — Audits / "improve my X"**: requests the actual asset first. It won't invent a page's contents and critique its own invention.
+
+Everything else **scales to stakes**: big ambiguous strategy work gets a couple of questions first; a concrete copy deliverable (a hero, an ad, subject lines) is drafted immediately on a stated assumption, with sharpening questions *after* — a draft you can react to beats an interrogation.
+
+---
+
+## The brief-first philosophy
+
+Before producing anything, the skill establishes (or explicitly infers and flags) five things:
+
+1. **Audience** — who specifically, and what do they believe now?
+2. **Goal** — the one action this should drive.
+3. **Offer** — what's marketed, and the single most important thing about it.
+4. **Proof** — the evidence behind the claims.
+5. **Constraint** — channel, length, tone, brand rules.
+
+Audience and goal are never *silently* guessed. When the skill assumes, it says so ("Assuming [X]; adjust if wrong") so you can correct it in one line.
+
+---
+
+## The universal quality bar
+
+Checked against every deliverable before it ships: **specificity** (numbers, not adjectives) · **reader-first** · **one message per piece** · **proof over claims** · **clean mechanics** (active voice, cut filler) · **earn the next line** · **honesty** (no fabricated stats, testimonials, or credentials).
+
+---
+
+## Evaluation
+
+The skill ships with its own test suite in [`evals/`](evals): **26 prompts** covering every module, phrasing variations, both gate checks, multi-module synthesis, an implicit trigger, an honesty probe, and **negative controls** (prompts that should *not* trigger it).
+
+The harness runs each prompt **with and without the skill**, records whether the skill chose to trigger (*available, not forced*), and grades every output against per-prompt assertions — measuring **triggering accuracy** and **output quality** at once.
+
+- 📊 Aggregate + per-eval table → [`benchmarks/README.md`](benchmarks/README.md)
+- 🧪 Eval set + harness + raw results → [`evals/`](evals)
+- 🖥️ Click-through viewer → [`evals/review.html`](evals/review.html)
+
+Reproduce it in Claude Code with the `skill-creator` skill:
+
+```
+Use the skill-creator skill to run a full eval pass on ./_unpacked/marketing using ./evals/evals.json.
 Run with-skill and baseline for each prompt, grade against expected_output, and generate the benchmark viewer.
 ```
 
@@ -266,41 +223,33 @@ Run with-skill and baseline for each prompt, grade against expected_output, and 
 - **Brief before output** — never silently guesses on audience or goal
 - **Proof over claims** — every significant claim needs support
 - **One message per piece** — every asset has exactly one job
-- **Draft-first for copy, questions-first for strategy** — match the friction to the stakes
-- **Honest by default** — never fabricates stats, testimonials, or credentials; surfaces advertising and email-compliance considerations where relevant
+- **Draft-first for copy, questions-first for strategy** — match friction to stakes
+- **Honest by default** — never fabricates proof; surfaces advertising/email-compliance considerations
 
 ---
 
 ## FAQ
 
-**Does it need an API key or any dependencies?**
-No. It's plain Markdown following the `SKILL.md` format — no code to run, no packages to install.
+**Does it need an API key or dependencies?** No — plain Markdown in the `SKILL.md` format. Nothing to run or install.
 
-**Why does it sometimes ask me questions instead of just answering?**
-For strategy foundations (positioning, voice, GTM) and audits, a confident guess is worse than a question — everything downstream inherits the error. For ordinary copy, it drafts first and asks after.
+**Why does it sometimes ask questions instead of answering?** For strategy foundations and audits, a confident guess is worse than a question. For ordinary copy, it drafts first and asks after.
 
-**Will it make up testimonials or statistics if I ask it to?**
-No. It writes the copy with clearly-marked placeholders and explains that fabricated proof breaks trust and, in many jurisdictions, advertising law.
+**Will it invent testimonials or stats if I ask?** No. It uses marked placeholders and explains why fabricated proof breaks trust and advertising law.
 
-**Does it work outside Claude?**
-Yes — any tool that supports the open `SKILL.md` format (Cursor, Codex CLI, Gemini CLI, and others) can load it.
+**Does it work outside Claude?** Yes — any tool that reads `SKILL.md` (Cursor, Codex CLI, Gemini CLI, …).
 
-**How is this different from just asking Claude to "be a marketer"?**
-The frameworks, gates, and quality bar make the output consistent and grounded instead of relying on whatever the model improvises that day — and the eval set lets you verify it.
+**How is this different from "be a marketer"?** Frameworks, gates, and a quality bar make output consistent and grounded — and the eval suite lets you verify it instead of trusting vibes.
 
-**Can I customize it?**
-Yes. Edit the reference modules to encode your own brand rules, frameworks, or tone, and add eval prompts to keep it honest.
+**Can I customize it?** Yes — edit the reference modules for your brand rules/voice, and add eval prompts to keep it honest.
 
 ---
 
 ## Roadmap
 
-Ideas and PRs welcome — rough directions:
-
-- Additional reference modules (e.g. paid-media buying, influencer/partnerships, PR & comms, localization)
-- A brand-profile file the skill can read so output inherits your voice and constraints automatically
-- More worked examples and before/after copy galleries
-- Expanded eval coverage with multi-run variance reporting
+- More reference modules (paid-media buying, partnerships/influencer, PR & comms, localization)
+- A brand-profile file the skill reads so output inherits your voice automatically
+- Multi-run (3×) eval pass with variance reporting; fix the tracked weak spots (#15, #8)
+- More worked before/after examples
 
 ---
 
@@ -308,9 +257,8 @@ Ideas and PRs welcome — rough directions:
 
 PRs and issues welcome.
 
-- Keep `SKILL.md` lean — it's always loaded and should stay a routing layer, not a content dump
-- Add depth to `references/` — new modules or expanded frameworks go there
-- If you add a module, add eval prompts to `evals.json` covering a happy path, a phrasing variation, and any gates that apply
+- Keep `SKILL.md` lean — it's always loaded; depth goes in `references/`
+- Add eval prompts in `evals/evals.json` for any new module (happy path + a phrasing variation + gates)
 - Run the eval set before and after your change so triggering and quality don't regress
 
 ---

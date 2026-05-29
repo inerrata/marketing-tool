@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Provides exactly three subject line options",
+      "passed": true,
+      "evidence": "The response provides exactly three numbered subject line options labeled by angle."
+    },
+    {
+      "text": "Each option takes a genuinely distinct angle and is labeled by angle (e.g. curiosity / benefit+offer / urgency)",
+      "passed": true,
+      "evidence": "The three options are explicitly labeled 'Urgency / Scarcity', 'Direct Benefit (Price-led)', and 'Curiosity / Identity', each representing a genuinely distinct approach."
+    },
+    {
+      "text": "Each subject line is under ~50 characters",
+      "passed": false,
+      "evidence": "Option 3 ('The one Black Friday deal a coffee snob actually needs') is approximately 54 characters, and Option 2 ('Black Friday: 30% off your next 3 months of coffee') is approximately 51 characters, both exceeding ~50."
+    },
+    {
+      "text": "Does not fabricate specific discount figures; flags if a real discount % is needed",
+      "passed": false,
+      "evidence": "Option 2 includes a specific '30%' discount figure; although the note says 'Adjust the percentage to your actual offer,' the assertion requires not fabricating the figure at all, not just flagging it after the fact."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 2,
+    "total": 4,
+    "pass_rate": 0.50
+  }
+}

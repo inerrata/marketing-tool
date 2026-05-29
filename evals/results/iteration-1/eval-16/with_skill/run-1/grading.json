@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Re-engagement flow that acknowledges the silence and offers a reason to return",
+      "passed": true,
+      "evidence": "Email 1 explicitly acknowledges '60 days since you last logged in' and offers feature updates as reasons to return; the full 5-email sequence is structured as a re-engagement flow."
+    },
+    {
+      "text": "Makes both staying and leaving easy",
+      "passed": true,
+      "evidence": "Email 5 ('Should we say goodbye?') provides two explicit options — 'Stay in touch' and 'Remove me from all emails' — making it frictionless to stay or leave."
+    },
+    {
+      "text": "Ends with suppression/removal of non-responders to protect deliverability",
+      "passed": true,
+      "evidence": "Sequence Notes explicitly state: 'anyone who clicks neither link within 14 days should be suppressed from marketing sends (not deleted; just moved to a minimal-contact segment).'"
+    },
+    {
+      "text": "Tone is helpful, not nagging",
+      "passed": true,
+      "evidence": "Email 1 states 'We're not here to guilt-trip you,' Email 4 says 'No pressure,' and the sequence uses warm, direct language throughout without repeated urgency pressure."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.00
+  }
+}

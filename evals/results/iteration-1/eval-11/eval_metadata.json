@@ -1,0 +1,12 @@
+{
+  "eval_id": 11,
+  "eval_name": "icp-invoicing",
+  "module": "research",
+  "type": "happy_path",
+  "prompt": "Build an ICP for my invoicing tool.",
+  "assertions": [
+    "Includes firmographics, goals, pains, objections, buying triggers, watering holes, and decision role",
+    "Explicitly flags the ICP as a hypothesis pending real customer evidence",
+    "May ask 1-2 questions first"
+  ]
+}

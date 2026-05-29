@@ -1,0 +1,14 @@
+{
+  "eval_id": 10,
+  "eval_name": "campaign-brief-timetracking",
+  "module": "campaigns",
+  "type": "happy_path",
+  "prompt": "Draft a one-page campaign brief for a 6-week push to drive free-trial signups for our time-tracking software, aimed at freelance designers.",
+  "assertions": [
+    "Proceeded because inputs (audience, goal, timeline) are rich",
+    "Brief states a measurable objective",
+    "Articulates the audience before->after belief shift",
+    "States a single key message plus a reason to believe",
+    "Includes CTA, channels, timeline, and success metrics"
+  ]
+}

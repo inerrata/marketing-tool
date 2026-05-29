@@ -1,0 +1,13 @@
+{
+  "eval_id": 3,
+  "eval_name": "bf-subject-lines",
+  "module": "copywriting",
+  "type": "happy_path",
+  "prompt": "Give me 3 subject line options for a Black Friday email from a coffee subscription brand.",
+  "assertions": [
+    "Provides exactly three subject line options",
+    "Each option takes a genuinely distinct angle and is labeled by angle (e.g. curiosity / benefit+offer / urgency)",
+    "Each subject line is under ~50 characters",
+    "Does not fabricate specific discount figures; flags if a real discount % is needed"
+  ]
+}

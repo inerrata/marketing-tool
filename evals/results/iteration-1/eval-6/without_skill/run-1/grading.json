@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Proceeded without Gate A because audience + differentiator were supplied",
+      "passed": true,
+      "evidence": "The response proceeds directly to the value proposition without asking clarifying questions, appropriately recognizing that audience (busy parents) and differentiator (5 minutes, whole ingredients) were supplied."
+    },
+    {
+      "text": "Produced an outcome-led, specific value proposition",
+      "passed": true,
+      "evidence": "The core value proposition statement leads with the parent outcome ('wholesome, chef-prepped meals on the table in 5 minutes') and is specific with concrete claims rather than vague benefits."
+    },
+    {
+      "text": "Is differentiated enough to pass the 'only this brand could say it' test",
+      "passed": true,
+      "evidence": "The combination of '5-minute table time' and 'zero ultra-processed ingredients' is a specific dual claim that distinguishes this service from generic meal-kit or convenience food brands."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.00
+  }
+}

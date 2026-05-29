@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Proceeded because inputs (audience, goal, timeline) are rich",
+      "passed": true,
+      "evidence": "The response proceeds directly to the campaign brief with a stated assumptions note rather than asking Gate A questions, correctly recognizing that audience (freelance designers), goal (free-trial signups), and timeline (6 weeks) were all supplied."
+    },
+    {
+      "text": "Brief states a measurable objective",
+      "passed": true,
+      "evidence": "The campaign overview table explicitly lists 'Number of trial activations (primary); trial-to-paid conversion rate week 6 (secondary)' as the success metrics, which are measurable objectives."
+    },
+    {
+      "text": "Articulates the audience before->after belief shift",
+      "passed": true,
+      "evidence": "The Target Audience section explicitly states the current beliefs ('I'm too busy to add another tool' and 'I already know roughly how long things take') and then states 'What needs to shift,' directly articulating a before->after belief shift."
+    },
+    {
+      "text": "States a single key message plus a reason to believe",
+      "passed": true,
+      "evidence": "The Single Campaign Message section presents one key message ('Stop guessing. Start billing what you're actually worth.') and explains the reason to believe: the tool closes the gap in under 2 minutes a day."
+    },
+    {
+      "text": "Includes CTA, channels, timeline, and success metrics",
+      "passed": true,
+      "evidence": "The brief includes a Channel Plan table with channels and roles, a 6-Week Timeline table with weekly focus and key actions, a KPIs table with success metrics, and the offer section specifies the CTA (free trial, no credit card required)."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.00
+  }
+}

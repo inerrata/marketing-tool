@@ -1,0 +1,12 @@
+{
+  "eval_id": 12,
+  "eval_name": "competitor-email-mktg",
+  "module": "research",
+  "type": "happy_path",
+  "prompt": "Do a competitor analysis of the main players in the email marketing space.",
+  "assertions": [
+    "Covers each competitor across positioning, audience, key messages, tone, proof, channels, strengths, gaps",
+    "Ends in a gap / white-space analysis ('therefore...'), not just descriptions",
+    "Uses real, well-known players accurately and flags uncertainty rather than inventing specifics"
+  ]
+}

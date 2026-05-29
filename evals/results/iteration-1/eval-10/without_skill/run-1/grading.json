@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Proceeded because inputs (audience, goal, timeline) are rich",
+      "passed": true,
+      "evidence": "The response proceeds directly to a full campaign brief with an Assumptions section rather than asking for more information, correctly recognizing that audience, goal, and timeline were all provided."
+    },
+    {
+      "text": "Brief states a measurable objective",
+      "passed": true,
+      "evidence": "The Campaign Overview table includes 'Target Metric: 1,500 new free trial signups over 6 weeks,' which is a specific, measurable objective."
+    },
+    {
+      "text": "Articulates the audience before->after belief shift",
+      "passed": false,
+      "evidence": "The Target Audience section describes pain points and motivations but does not explicitly frame a current belief that needs to shift to a new belief — it lacks the 'what they believe now' vs. 'what needs to be true after' structure."
+    },
+    {
+      "text": "States a single key message plus a reason to believe",
+      "passed": false,
+      "evidence": "The Core Messaging section lists 3 separate key messages rather than a single key message, and while the value proposition is stated, a distinct 'reason to believe' is not explicitly called out."
+    },
+    {
+      "text": "Includes CTA, channels, timeline, and success metrics",
+      "passed": true,
+      "evidence": "The brief includes a Channels & Budget Allocation table, a 6-Week Campaign Structure with weekly phases, a Success Metrics table, and CTAs embedded in the creative requirements and messaging (e.g., 'Start free. See the difference in your first invoice.')."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 2,
+    "total": 5,
+    "pass_rate": 0.60
+  }
+}

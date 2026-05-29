@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Computes LTV correctly (50*18 = 900)",
+      "passed": true,
+      "evidence": "The Math table shows 'Customer Lifetime Value (LTV) = $900' with inputs $50/month × 18 months — correct computation."
+    },
+    {
+      "text": "Computes LTV:CAC ratio (~2.25:1)",
+      "passed": true,
+      "evidence": "The Math table shows 'LTV:CAC Ratio = 2.25:1' — correct ratio of $900/$400."
+    },
+    {
+      "text": "Shows the formulas and inputs used",
+      "passed": true,
+      "evidence": "The Math table displays all inputs (MRR $50, lifetime 18 months, CAC $400) and derived figures including LTV, LTV:CAC ratio, and CAC payback period of 8 months."
+    },
+    {
+      "text": "Interprets against the ~3:1 guideline while flagging benchmarks vary by industry and gross margin matters",
+      "passed": false,
+      "evidence": "The response references the 3:1 benchmark but does not flag that benchmarks vary by industry or that gross margin affects the interpretation of the LTV:CAC ratio."
+    },
+    {
+      "text": "Does not present the verdict as financial certainty",
+      "passed": true,
+      "evidence": "The response uses qualified language: 'Not bad,' 'Not great,' 'generally considered acceptable,' and frames the verdict with caveats about what the numbers suggest rather than definitive financial conclusions."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 1,
+    "total": 5,
+    "pass_rate": 0.80
+  }
+}

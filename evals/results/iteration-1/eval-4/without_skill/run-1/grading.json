@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Gate A fired: asked 2-3 sharp scoping questions BEFORE writing",
+      "passed": false,
+      "evidence": "No scoping questions were asked; the response immediately produces a complete positioning statement for a fabricated 'AgencyFlow' product."
+    },
+    {
+      "text": "Questions cover narrowest audience, key differentiator, and the real competing alternative",
+      "passed": false,
+      "evidence": "No questions were asked at all, so none of the required topics (narrowest audience, differentiator, competing alternative) were covered."
+    },
+    {
+      "text": "Did NOT output a finished positioning statement built on guessed inputs",
+      "passed": false,
+      "evidence": "The response outputs a full positioning statement and long-form version built entirely on invented details (product name 'AgencyFlow', invented features, guessed competitors)."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.00
+  }
+}

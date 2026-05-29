@@ -1,0 +1,14 @@
+{
+  "eval_id": 13,
+  "eval_name": "seo-brief-crm-nonprofits",
+  "module": "seo",
+  "type": "happy_path",
+  "prompt": "Write an SEO content brief targeting 'best crm for nonprofits'.",
+  "assertions": [
+    "Identifies commercial-investigation intent and maps it to a comparison/listicle format",
+    "Title under 60 chars and meta description 150-160 chars",
+    "Includes an H2/H3 outline and People-Also-Ask questions",
+    "Includes a differentiation angle, E-E-A-T notes, internal links, and a CTA",
+    "Flags that real search volume/difficulty need a tool rather than inventing numbers"
+  ]
+}

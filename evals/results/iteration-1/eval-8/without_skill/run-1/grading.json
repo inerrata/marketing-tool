@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Triggered content strategy guidance, not a generic 'post valuable content' answer",
+      "passed": true,
+      "evidence": "No skill was available, but the response goes well beyond generic advice by providing 7 named content categories with specific examples, format tips, cadence guidance, and a what-to-avoid list."
+    },
+    {
+      "text": "Gives content pillars plus format guidance tied to LinkedIn norms",
+      "passed": true,
+      "evidence": "The response provides 7 content categories functioning as pillars and a dedicated Format Tips section covering post length, first-line hooks, link placement, carousels, and personal photos — all tied to LinkedIn-specific norms."
+    },
+    {
+      "text": "Ties content to funnel stages",
+      "passed": false,
+      "evidence": "The response does not mention funnel stages (TOFU/MOFU/BOFU) or map content categories to awareness, consideration, or conversion stages."
+    },
+    {
+      "text": "May ask about niche/audience",
+      "passed": true,
+      "evidence": "The 'Clarifying Questions' section at the end asks about consulting specialty and ideal client (niche/audience), satisfying this assertion."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 1,
+    "total": 4,
+    "pass_rate": 0.75
+  }
+}

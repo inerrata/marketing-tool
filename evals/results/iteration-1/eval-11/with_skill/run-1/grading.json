@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Includes firmographics, goals, pains, objections, buying triggers, watering holes, and decision role",
+      "passed": false,
+      "evidence": "The response only asks clarifying questions before building the ICP; no ICP is delivered, so none of the required components (firmographics, goals, pains, objections, watering holes, decision role) are present."
+    },
+    {
+      "text": "Explicitly flags the ICP as a hypothesis pending real customer evidence",
+      "passed": false,
+      "evidence": "No ICP is produced in this response, so no hypothesis flag appears; the response is entirely a pre-ICP question set."
+    },
+    {
+      "text": "May ask 1-2 questions first",
+      "passed": true,
+      "evidence": "The response asks three focused clarifying questions about target customer, differentiation, and current alternatives before building the ICP."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 2,
+    "total": 3,
+    "pass_rate": 0.33
+  }
+}

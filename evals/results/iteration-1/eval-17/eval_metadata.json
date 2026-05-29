@@ -1,0 +1,12 @@
+{
+  "eval_id": 17,
+  "eval_name": "pricing-page-audit",
+  "module": "cro",
+  "type": "gate_B",
+  "prompt": "My pricing page isn't converting, audit it.",
+  "assertions": [
+    "Gate B fired: asked for the actual page (paste copy / URL / screenshot) plus goal and audience BEFORE auditing",
+    "Did NOT invent the page's contents and audit its own invention",
+    "May offer a clearly-labeled generic checklist as a fallback"
+  ]
+}

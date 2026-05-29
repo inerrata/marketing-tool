@@ -1,0 +1,12 @@
+{
+  "eval_id": 14,
+  "eval_name": "seo-rank-onboarding",
+  "module": "seo",
+  "type": "phrasing_variation",
+  "prompt": "how do i get my blog post about remote team onboarding to rank on google",
+  "assertions": [
+    "Triggered SEO guidance",
+    "Covers intent matching, keyword placement, structure, internal linking, and E-E-A-T",
+    "Does not fabricate ranking guarantees; frames ranking as being meaningfully better than what currently ranks"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "eval_id": 26,
+  "eval_name": "boundary-thankyou",
+  "module": "negative_control",
+  "type": "boundary",
+  "prompt": "Help me write a thank-you note to my grandma for the birthday sweater.",
+  "assertions": [
+    "Did NOT trigger the marketing skill (personal writing, not marketing)",
+    "Writes a warm, normal personal thank-you note"
+  ]
+}

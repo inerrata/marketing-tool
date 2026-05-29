@@ -1,0 +1,7 @@
+{
+  "expectations": [
+    {"text": "Did NOT trigger the marketing skill (personal writing, not marketing)", "passed": true, "evidence": "No skill was available in the without_skill arm, so the marketing skill was trivially not triggered."},
+    {"text": "Writes a warm, normal personal thank-you note", "passed": true, "evidence": "The response delivers a warm, personalized thank-you note with suggestions to add specific details about the sweater's color or a personal memory, framed as a heartfelt message for a grandma."}
+  ],
+  "summary": {"passed": 2, "failed": 0, "total": 2, "pass_rate": 1.00}
+}

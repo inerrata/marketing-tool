@@ -1,0 +1,14 @@
+{
+  "eval_id": 18,
+  "eval_name": "landing-page-audit-asset",
+  "module": "cro",
+  "type": "gate_B_with_asset",
+  "prompt": "Here's my landing page copy, tell me why it's not converting and how to fix it:\n\n# Landing page copy \u2014 \"TaskFlow\" (project management app)\n\n## Hero\nHeadline: Welcome to TaskFlow \u2014 The Ultimate All-in-One Productivity Platform\nSubhead: TaskFlow is a powerful, innovative, and seamless solution designed to\nhelp teams of all sizes work smarter. Leverage our robust feature set today.\n[Button: Learn More]   [Button: Sign Up]   [Button: Contact Sales]\n\n## Features\n- Powerful task management\n- Innovative dashboards\n- Seamless integrations\n- Robust reporting\n- Best-in-class collaboration\n- Cutting-edge AI (coming soon)\n\n## About\nFounded in 2021, TaskFlow is on a mission to revolutionize the way the world\nworks. Our passionate team is dedicated to building amazing software.\n\n## Pricing\nWe have flexible plans for everyone. Contact us to learn more.\n\n## Footer CTA\nReady to get started? [Button: Sign Up]   Questions? [Button: Contact Us]\n",
+  "assertions": [
+    "Gate B satisfied: audited the actual provided copy rather than asking for it",
+    "Runs a structured (\u22488-point) conversion audit against the real copy",
+    "References specific problems in the provided copy (e.g. vague 'powerful/seamless' language, three competing CTAs, no proof)",
+    "Produces a prioritized fix list ordered by impact/effort",
+    "Includes the low-traffic A/B testing caveat"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Gate B fired: asked for the actual page (paste copy / URL / screenshot) plus goal and audience BEFORE auditing",
+      "passed": true,
+      "evidence": "The response asks for 'The page itself — paste the copy directly, share the URL, or upload a screenshot,' 'The goal,' and 'The audience' before performing any audit."
+    },
+    {
+      "text": "Did NOT invent the page's contents and audit its own invention",
+      "passed": true,
+      "evidence": "The response contains no invented page content or audit of fabricated copy; it explicitly declines to audit without seeing the real page."
+    },
+    {
+      "text": "May offer a clearly-labeled generic checklist as a fallback",
+      "passed": true,
+      "evidence": "The response offers 'a generic pricing-page audit checklist to self-assess' and clearly labels it as a fallback, noting it 'won't catch the specific issues yours has.'"
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.00
+  }
+}

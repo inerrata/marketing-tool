@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Triggered the skill despite casual, keyword-light phrasing",
+      "passed": false,
+      "evidence": "No skill is available in the without_skill arm; the response was generated without any skill invocation."
+    },
+    {
+      "text": "Headline is outcome-led and concrete, not a vague aspirational tagline",
+      "passed": false,
+      "evidence": "The headlines offered ('Schedule smarter. Post consistently.', 'Your social calendar, on autopilot.', 'Post less. Grow more.') are vague or aspirational taglines rather than outcome-led and concrete statements."
+    },
+    {
+      "text": "Includes a subheadline and a primary CTA",
+      "passed": false,
+      "evidence": "Each option includes a supporting subheadline, but no option includes a primary CTA button or call-to-action text."
+    },
+    {
+      "text": "Output is finished hero copy, not a description of what could be written",
+      "passed": true,
+      "evidence": "The response delivers five complete headline-and-subheadline pairs as finished copy rather than describing what could be written."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 3,
+    "total": 4,
+    "pass_rate": 0.25
+  }
+}

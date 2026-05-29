@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Identifies commercial-investigation intent and maps it to a comparison/listicle format",
+      "passed": true,
+      "evidence": "Section 2 explicitly labels intent as 'Commercial investigation' and states 'Dominant content format... Listicle/comparison' with a note that a product page or generic explainer will not rank."
+    },
+    {
+      "text": "Title under 60 chars and meta description 150-160 chars",
+      "passed": true,
+      "evidence": "The title tag 'Best CRM for Nonprofits in 2026 | Compared & Ranked' is 51 characters, and the meta description 'Not all nonprofit CRMs handle donor management, volunteer tracking, and grant reporting equally well. Here are the top picks, compared by size and budget.' is 153 characters."
+    },
+    {
+      "text": "Includes an H2/H3 outline and People-Also-Ask questions",
+      "passed": true,
+      "evidence": "Section 6 provides a full H2/H3 outline and Section 7 lists eight People-Also-Ask questions explicitly sourced from PAA and related searches."
+    },
+    {
+      "text": "Includes a differentiation angle, E-E-A-T notes, internal links, and a CTA",
+      "passed": true,
+      "evidence": "Section 8 provides three differentiation angles, Section 11 covers E-E-A-T signals, Section 9 specifies internal linking strategy, and Section 10 details CTA placement and copy options."
+    },
+    {
+      "text": "Flags that real search volume/difficulty need a tool rather than inventing numbers",
+      "passed": true,
+      "evidence": "Section 1 explicitly states: 'Pull actual volume and difficulty data in Ahrefs or Semrush before finalizing priority. Secondary keywords above are inferred from topical relevance — verify search volume before building cluster strategy around them.'"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.00
+  }
+}

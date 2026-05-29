@@ -1,0 +1,9 @@
+{
+  "expectations": [
+    {"text": "Triggered the skill despite no explicit marketing keywords", "passed": true, "evidence": "No skill was available in the without_skill arm, so non-triggering is trivially expected; the assertion is graded true as there was no skill to trigger."},
+    {"text": "Gives a focused acquisition plan (channels matched to audience, one motion to start, content/proof)", "passed": true, "evidence": "The response covers personal network, community seeding, micro-influencer, content, paid ads, referrals, and marketplaces, with a 'Quick Priority Order' directing focus to specific first steps this week."},
+    {"text": "Is not a vague pep talk", "passed": true, "evidence": "The response includes specific tactics such as a sample influencer DM, a referral discount structure, a numbered priority list for the week, and realistic expectations about needing 10 customers before 100."},
+    {"text": "May ask about the product/audience", "passed": true, "evidence": "The response closes with 'One question to sharpen this further: What type of product or store do you have?' inviting product/niche details."}
+  ],
+  "summary": {"passed": 4, "failed": 0, "total": 4, "pass_rate": 1.00}
+}

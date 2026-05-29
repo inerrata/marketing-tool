@@ -1,0 +1,7 @@
+{
+  "expectations": [
+    {"text": "Did NOT trigger the marketing skill (not a brand/product naming task)", "passed": true, "evidence": "No skill was available in the without_skill arm, so the marketing skill was trivially not triggered."},
+    {"text": "Gives a normal, friendly set of cat name ideas", "passed": true, "evidence": "The response provides four categorized lists of cat names (Classic/Elegant, Lazy/Sleepy, Pop Culture, Cute & Fitting) with friendly top picks including Misty, Ash, and Dozer."}
+  ],
+  "summary": {"passed": 2, "failed": 0, "total": 2, "pass_rate": 1.00}
+}

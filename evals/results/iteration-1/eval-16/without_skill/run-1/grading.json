@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Re-engagement flow that acknowledges the silence and offers a reason to return",
+      "passed": true,
+      "evidence": "Email 1 acknowledges 'you haven't stopped by in about two months' and offers new features shipped since last visit as reasons to return."
+    },
+    {
+      "text": "Makes both staying and leaving easy",
+      "passed": true,
+      "evidence": "Email 5 (Final Goodbye) provides a 'Keep My Account' CTA and implicitly makes leaving easy by stating 'no action needed' for account closure, along with Exit Conditions listing unsubscribe as a stop trigger."
+    },
+    {
+      "text": "Ends with suppression/removal of non-responders to protect deliverability",
+      "passed": true,
+      "evidence": "Email 5 and the Exit Conditions section explicitly address removing/suppressing non-responders: unsubscribers are stopped, and account deactivation removes contacts from the list."
+    },
+    {
+      "text": "Tone is helpful, not nagging",
+      "passed": true,
+      "evidence": "Email 1 says 'life gets busy, we get it,' Email 3 offers 1:1 help rather than pressure, and Email 5 closes with 'no hard feelings' — the tone throughout is warm and supportive."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.00
+  }
+}

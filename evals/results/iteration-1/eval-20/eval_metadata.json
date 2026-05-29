@@ -1,0 +1,14 @@
+{
+  "eval_id": 20,
+  "eval_name": "cac-ltv",
+  "module": "measurement",
+  "type": "phrasing_variation",
+  "prompt": "is my customer acquisition cost of 400 dollars good if customers pay 50/month and stay about 18 months",
+  "assertions": [
+    "Computes LTV correctly (50*18 = 900)",
+    "Computes LTV:CAC ratio (~2.25:1)",
+    "Shows the formulas and inputs used",
+    "Interprets against the ~3:1 guideline while flagging benchmarks vary by industry and gross margin matters",
+    "Does not present the verdict as financial certainty"
+  ]
+}

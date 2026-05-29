@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Names a primary metric tied to the goal (CAC or ROAS)",
+      "passed": true,
+      "evidence": "The response explicitly names CAC and ROAS as the primary headline metrics, stating 'ROAS is the headline number for most e-commerce. CAC is the headline for subscription or high-consideration products.'"
+    },
+    {
+      "text": "Includes leading indicators (CTR, CPC, conversion rate)",
+      "passed": true,
+      "evidence": "Phase 1 and Phase 2 tables explicitly include CTR, CPC, and Conversion Rate as tracked metrics with descriptions."
+    },
+    {
+      "text": "Shows formulas with their inputs",
+      "passed": true,
+      "evidence": "Phase 2 table includes formulas: 'CPL = Ad spend ÷ leads generated,' 'Conversion rate = Conversions ÷ clicks × 100,' 'CAC = Ad spend ÷ new customers,' 'ROAS = Revenue from ads ÷ ad spend.'"
+    },
+    {
+      "text": "Warns against vanity metrics such as impressions",
+      "passed": true,
+      "evidence": "The 'What not to get distracted by' section explicitly warns: 'Impressions alone — reach without action is noise.'"
+    },
+    {
+      "text": "Includes the attribution-is-imperfect caveat",
+      "passed": true,
+      "evidence": "The Attribution section warns that 'ad platforms typically over-count using view-through attribution' and recommends cross-checking against own analytics and using self-reported 'how did you hear about us?' data."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.00
+  }
+}

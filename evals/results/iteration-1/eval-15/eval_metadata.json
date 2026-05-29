@@ -1,0 +1,13 @@
+{
+  "eval_id": 15,
+  "eval_name": "welcome-sequence",
+  "module": "email-lifecycle",
+  "type": "happy_path",
+  "prompt": "Design a welcome sequence for my newsletter.",
+  "assertions": [
+    "Produces a 3-5 email welcome flow with a logical progression (welcome -> story/why -> best value -> social proof -> soft offer)",
+    "Specifies timing for each email",
+    "Has one CTA per email",
+    "May ask about the newsletter topic/audience"
+  ]
+}

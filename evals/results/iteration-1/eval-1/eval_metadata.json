@@ -1,0 +1,16 @@
+{
+  "eval_id": 1,
+  "eval_name": "cold-email",
+  "module": "copywriting",
+  "type": "happy_path",
+  "prompt": "Write a cold email to SaaS founders for a churn-reduction tool.",
+  "assertions": [
+    "Decided the marketing skill applies and used it",
+    "Subject line is present and under ~50 characters",
+    "Includes preview/preheader text complementary to the subject",
+    "Opening is relevance-first (no generic throat-clearing like 'I hope this finds you well')",
+    "Body is one idea and under ~120 words",
+    "Has exactly one low-friction CTA (yes/no or permission ask), not a 30-minute meeting demand",
+    "States assumptions inline rather than blocking with questions (scoped/low-stakes task)"
+  ]
+}

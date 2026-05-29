@@ -1,0 +1,45 @@
+{
+  "expectations": [
+    {
+      "text": "Decided the marketing skill applies and used it",
+      "passed": true,
+      "evidence": "trigger_decision.json confirms triggered=true, citing cold email copywriting as explicitly covered by the marketing skill."
+    },
+    {
+      "text": "Subject line is present and under ~50 characters",
+      "passed": false,
+      "evidence": "Three subject options are provided, but option C ('Your best customers are about to leave — you just don't know which ones') is approximately 70 characters, well over ~50."
+    },
+    {
+      "text": "Includes preview/preheader text complementary to the subject",
+      "passed": true,
+      "evidence": "Preview text 'Most founders find out too late. Here's the early warning system.' is explicitly labeled and directly complements subject line A."
+    },
+    {
+      "text": "Opening is relevance-first (no generic throat-clearing like 'I hope this finds you well')",
+      "passed": true,
+      "evidence": "The email body opens with 'You already did the hard part — you got them to pay.' which immediately addresses the reader's situation with no generic preamble."
+    },
+    {
+      "text": "Body is one idea and under ~120 words",
+      "passed": true,
+      "evidence": "The email body from the opening through the CTA is approximately 87 words and stays focused on the single idea of detecting pre-churn signals."
+    },
+    {
+      "text": "Has exactly one low-friction CTA (yes/no or permission ask), not a 30-minute meeting demand",
+      "passed": true,
+      "evidence": "'Worth a 15-minute look?' is framed as a yes/no question and requests a 15-minute slot, which is not a 30-minute meeting demand."
+    },
+    {
+      "text": "States assumptions inline rather than blocking with questions (scoped/low-stakes task)",
+      "passed": true,
+      "evidence": "The response opens with an explicit assumptions block (B2B SaaS, early-to-growth-stage founders, behavioral signals, no proof metrics) before writing the email."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 1,
+    "total": 7,
+    "pass_rate": 0.86
+  }
+}

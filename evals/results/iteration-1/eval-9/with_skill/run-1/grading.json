@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Asked 2-3 scoping questions (audience, goal/metric, timeline) and/or led with a one-page campaign brief",
+      "passed": true,
+      "evidence": "The response asks exactly 3 scoping questions covering audience (Q1), differentiator (Q2), and launch stage/goal (Q3 with sub-examples including metrics and timeline)."
+    },
+    {
+      "text": "Provides a phased pre-launch / launch / post-launch structure",
+      "passed": false,
+      "evidence": "The response contains no phased structure; it is entirely Gate A questions with a brief list of what will be built once answered, but no pre/launch/post-launch plan is delivered."
+    },
+    {
+      "text": "Includes an asset checklist",
+      "passed": false,
+      "evidence": "No asset checklist is present in the response; the bullet list of deliverables (campaign brief, copy, emails, etc.) is a promise of future output, not an actual checklist."
+    },
+    {
+      "text": "Pulls multiple modules (campaign + copy + email + measurement) without sprawling",
+      "passed": false,
+      "evidence": "The response does not pull or execute any modules; it only lists what modules will be engaged after the user provides answers to the scoping questions."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 3,
+    "total": 4,
+    "pass_rate": 0.25
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "expectations": [
+    {"text": "Did NOT trigger the marketing skill", "passed": true, "evidence": "No skill was available in the without_skill arm, so the marketing skill was trivially not triggered."},
+    {"text": "Gives a normal, correct technical explanation of DNS resolution", "passed": true, "evidence": "The response provides a step-by-step explanation of DNS resolution from browser cache through root/TLD/authoritative servers, includes an ASCII diagram, covers record types and TTL, and is technically accurate throughout."}
+  ],
+  "summary": {"passed": 2, "failed": 0, "total": 2, "pass_rate": 1.00}
+}

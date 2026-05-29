@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Defines 3-5 specific content pillars",
+      "passed": true,
+      "evidence": "The response defines exactly 3 content pillars (Category Education 50%, Proof & Validation 30%, Product & Company 20%) with clear descriptions and rationale."
+    },
+    {
+      "text": "Maps content to funnel stages (TOFU/MOFU/BOFU)",
+      "passed": true,
+      "evidence": "While not labeled TOFU/MOFU/BOFU explicitly, the calendar maps pillar 1 (Education) to top-of-funnel awareness, pillar 2 (Proof) to mid-funnel conversion, and pillar 3 (Product) to bottom-of-funnel — the logic is clearly funnel-mapped even without the labels."
+    },
+    {
+      "text": "Applies a value-heavy content mix ratio",
+      "passed": true,
+      "evidence": "The 50% Education + 30% Proof = 80% value-giving content vs. 20% product/company explicitly frames this as 'teach first, sell second,' which is a value-heavy ratio."
+    },
+    {
+      "text": "Calendar includes the reference fields: pillar, funnel stage, format, working title, CTA",
+      "passed": false,
+      "evidence": "The calendar table columns are Day/Channel/Format/Topic-Angle/Pillar/CTA — 'funnel stage' is not a distinct column, and 'working title' is labeled 'Topic/Angle' rather than a proper working title field."
+    },
+    {
+      "text": "Asks 2-3 scoping questions or states explicit assumptions (medium stakes)",
+      "passed": true,
+      "evidence": "The response opens with 3 specific scoping questions (buyer, differentiator, funnel stage) followed by a clearly labeled Assumptions block covering audience, product, stage, channels, and goal."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 1,
+    "total": 5,
+    "pass_rate": 0.80
+  }
+}

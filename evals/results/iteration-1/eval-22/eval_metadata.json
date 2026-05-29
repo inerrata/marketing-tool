@@ -1,0 +1,13 @@
+{
+  "eval_id": 22,
+  "eval_name": "first-100-customers",
+  "module": "implicit",
+  "type": "implicit_trigger",
+  "prompt": "Nobody knows my online store exists. How do I get my first 100 customers?",
+  "assertions": [
+    "Triggered the skill despite no explicit marketing keywords",
+    "Gives a focused acquisition plan (channels matched to audience, one motion to start, content/proof)",
+    "Is not a vague pep talk",
+    "May ask about the product/audience"
+  ]
+}

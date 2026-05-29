@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Asked 2-3 scoping questions (audience, goal/metric, timeline) and/or led with a one-page campaign brief",
+      "passed": false,
+      "evidence": "No skill was available; the response provides no scoping questions and no one-page campaign brief — it dives directly into a general launch plan without establishing goals, audience, or timeline first."
+    },
+    {
+      "text": "Provides a phased pre-launch / launch / post-launch structure",
+      "passed": true,
+      "evidence": "The response is explicitly structured into 'Before You Launch: Preparation,' 'Launch Day Strategy,' and 'Post-Launch: Building Momentum' sections, providing a clear three-phase structure."
+    },
+    {
+      "text": "Includes an asset checklist",
+      "passed": false,
+      "evidence": "The response does not include an asset checklist; the 'Creative Requirements' or equivalent list of deliverables is absent, and the metrics table covers tracking rather than assets to produce."
+    },
+    {
+      "text": "Pulls multiple modules (campaign + copy + email + measurement) without sprawling",
+      "passed": false,
+      "evidence": "The response covers tactics (Product Hunt, communities, ASO, influencers) but does not integrate distinct marketing modules such as a campaign brief, copy framework, email sequence structure, and measurement plan in a cohesive multi-module output."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 3,
+    "total": 4,
+    "pass_rate": 0.25
+  }
+}

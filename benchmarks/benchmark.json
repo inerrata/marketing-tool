@@ -1,0 +1,2025 @@
+{
+  "metadata": {
+    "skill_name": "marketing",
+    "skill_path": "C:/Users/ziboz/Documents/claude-skills/marketing",
+    "executor_model": "claude-sonnet-4.6 (eval runs)",
+    "analyzer_model": "claude-opus-4.8",
+    "timestamp": "2026-05-29T20:20:19Z",
+    "evals_run": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "runs_per_configuration": 1,
+    "notes": "1 run per eval per configuration (1x pass). Skill presented as available-not-forced; trigger decision recorded per run."
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.86,
+        "passed": 6,
+        "failed": 1,
+        "total": 7,
+        "time_seconds": 34.1,
+        "tokens": 22700,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Decided the marketing skill applies and used it",
+          "passed": true,
+          "evidence": "trigger_decision.json confirms triggered=true, citing cold email copywriting as explicitly covered by the marketing skill."
+        },
+        {
+          "text": "Subject line is present and under ~50 characters",
+          "passed": false,
+          "evidence": "Three subject options are provided, but option C ('Your best customers are about to leave \u2014 you just don't know which ones') is approximately 70 characters, well over ~50."
+        },
+        {
+          "text": "Includes preview/preheader text complementary to the subject",
+          "passed": true,
+          "evidence": "Preview text 'Most founders find out too late. Here's the early warning system.' is explicitly labeled and directly complements subject line A."
+        },
+        {
+          "text": "Opening is relevance-first (no generic throat-clearing like 'I hope this finds you well')",
+          "passed": true,
+          "evidence": "The email body opens with 'You already did the hard part \u2014 you got them to pay.' which immediately addresses the reader's situation with no generic preamble."
+        },
+        {
+          "text": "Body is one idea and under ~120 words",
+          "passed": true,
+          "evidence": "The email body from the opening through the CTA is approximately 87 words and stays focused on the single idea of detecting pre-churn signals."
+        },
+        {
+          "text": "Has exactly one low-friction CTA (yes/no or permission ask), not a 30-minute meeting demand",
+          "passed": true,
+          "evidence": "'Worth a 15-minute look?' is framed as a yes/no question and requests a 15-minute slot, which is not a 30-minute meeting demand."
+        },
+        {
+          "text": "States assumptions inline rather than blocking with questions (scoped/low-stakes task)",
+          "passed": true,
+          "evidence": "The response opens with an explicit assumptions block (B2B SaaS, early-to-growth-stage founders, behavioral signals, no proof metrics) before writing the email."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 10,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Proceeded because inputs (audience, goal, timeline) are rich",
+          "passed": true,
+          "evidence": "The response proceeds directly to the campaign brief with a stated assumptions note rather than asking Gate A questions, correctly recognizing that audience (freelance designers), goal (free-trial signups), and timeline (6 weeks) were all supplied."
+        },
+        {
+          "text": "Brief states a measurable objective",
+          "passed": true,
+          "evidence": "The campaign overview table explicitly lists 'Number of trial activations (primary); trial-to-paid conversion rate week 6 (secondary)' as the success metrics, which are measurable objectives."
+        },
+        {
+          "text": "Articulates the audience before->after belief shift",
+          "passed": true,
+          "evidence": "The Target Audience section explicitly states the current beliefs ('I'm too busy to add another tool' and 'I already know roughly how long things take') and then states 'What needs to shift,' directly articulating a before->after belief shift."
+        },
+        {
+          "text": "States a single key message plus a reason to believe",
+          "passed": true,
+          "evidence": "The Single Campaign Message section presents one key message ('Stop guessing. Start billing what you're actually worth.') and explains the reason to believe: the tool closes the gap in under 2 minutes a day."
+        },
+        {
+          "text": "Includes CTA, channels, timeline, and success metrics",
+          "passed": true,
+          "evidence": "The brief includes a Channel Plan table with channels and roles, a 6-Week Timeline table with weekly focus and key actions, a KPIs table with success metrics, and the offer section specifies the CTA (free trial, no credit card required)."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 11,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.33,
+        "passed": 1,
+        "failed": 2,
+        "total": 3,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Includes firmographics, goals, pains, objections, buying triggers, watering holes, and decision role",
+          "passed": false,
+          "evidence": "The response only asks clarifying questions before building the ICP; no ICP is delivered, so none of the required components (firmographics, goals, pains, objections, watering holes, decision role) are present."
+        },
+        {
+          "text": "Explicitly flags the ICP as a hypothesis pending real customer evidence",
+          "passed": false,
+          "evidence": "No ICP is produced in this response, so no hypothesis flag appears; the response is entirely a pre-ICP question set."
+        },
+        {
+          "text": "May ask 1-2 questions first",
+          "passed": true,
+          "evidence": "The response asks three focused clarifying questions about target customer, differentiation, and current alternatives before building the ICP."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 12,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 3,
+        "failed": 0,
+        "total": 3,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Covers each competitor across positioning, audience, key messages, tone, proof, channels, strengths, gaps",
+          "passed": true,
+          "evidence": "Each of the six main competitors is analyzed in a table covering target audience, core messages, tone/voice, offer/pricing (proof), channels, strengths, and gaps/weaknesses."
+        },
+        {
+          "text": "Ends in a gap / white-space analysis ('therefore...'), not just descriptions",
+          "passed": true,
+          "evidence": "The response closes with a 'Gap Analysis \u2014 Where the White Space Is' section and 'Strategic Takeaways' that make explicit 'therefore' recommendations based on the competitive landscape."
+        },
+        {
+          "text": "Uses real, well-known players accurately and flags uncertainty rather than inventing specifics",
+          "passed": true,
+          "evidence": "All six main players (Mailchimp, Klaviyo, ActiveCampaign, HubSpot, ConvertKit/Kit, Brevo) are real and well-known, with accurate positioning and an implicit note that specifics like pricing should be verified."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 13,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Identifies commercial-investigation intent and maps it to a comparison/listicle format",
+          "passed": true,
+          "evidence": "Section 2 explicitly labels intent as 'Commercial investigation' and states 'Dominant content format... Listicle/comparison' with a note that a product page or generic explainer will not rank."
+        },
+        {
+          "text": "Title under 60 chars and meta description 150-160 chars",
+          "passed": true,
+          "evidence": "The title tag 'Best CRM for Nonprofits in 2026 | Compared & Ranked' is 51 characters, and the meta description 'Not all nonprofit CRMs handle donor management, volunteer tracking, and grant reporting equally well. Here are the top picks, compared by size and budget.' is 153 characters."
+        },
+        {
+          "text": "Includes an H2/H3 outline and People-Also-Ask questions",
+          "passed": true,
+          "evidence": "Section 6 provides a full H2/H3 outline and Section 7 lists eight People-Also-Ask questions explicitly sourced from PAA and related searches."
+        },
+        {
+          "text": "Includes a differentiation angle, E-E-A-T notes, internal links, and a CTA",
+          "passed": true,
+          "evidence": "Section 8 provides three differentiation angles, Section 11 covers E-E-A-T signals, Section 9 specifies internal linking strategy, and Section 10 details CTA placement and copy options."
+        },
+        {
+          "text": "Flags that real search volume/difficulty need a tool rather than inventing numbers",
+          "passed": true,
+          "evidence": "Section 1 explicitly states: 'Pull actual volume and difficulty data in Ahrefs or Semrush before finalizing priority. Secondary keywords above are inferred from topical relevance \u2014 verify search volume before building cluster strategy around them.'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 14,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 3,
+        "failed": 0,
+        "total": 3,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Triggered SEO guidance",
+          "passed": true,
+          "evidence": "trigger_decision.json shows triggered=true, and the response is a comprehensive SEO ranking guide for a blog post."
+        },
+        {
+          "text": "Covers intent matching, keyword placement, structure, internal linking, and E-E-A-T",
+          "passed": true,
+          "evidence": "The response covers intent matching (Step 2), keyword placement (Step 3 on-page section), structure/scannability (Step 3), internal linking (Step 5), and E-E-A-T (Step 4) as distinct sections."
+        },
+        {
+          "text": "Does not fabricate ranking guarantees; frames ranking as being meaningfully better than what currently ranks",
+          "passed": true,
+          "evidence": "The response explicitly states 'SEO takes time' with a 3-6 month caveat, and repeatedly frames ranking success as requiring you to 'beat the content that currently ranks' rather than guaranteeing outcomes."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 15,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.25,
+        "passed": 1,
+        "failed": 3,
+        "total": 4,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Produces a 3-5 email welcome flow with a logical progression (welcome -> story/why -> best value -> social proof -> soft offer)",
+          "passed": false,
+          "evidence": "The response only asks three clarifying questions and does not produce any email sequence; no flow or progression is present."
+        },
+        {
+          "text": "Specifies timing for each email",
+          "passed": false,
+          "evidence": "No emails are written in this response, so no timing is specified."
+        },
+        {
+          "text": "Has one CTA per email",
+          "passed": false,
+          "evidence": "No emails are written in this response, so no CTAs are present."
+        },
+        {
+          "text": "May ask about the newsletter topic/audience",
+          "passed": true,
+          "evidence": "The response asks three targeted questions about the subscriber audience, desired outcome, and newsletter promise before proceeding to write the sequence."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 16,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Re-engagement flow that acknowledges the silence and offers a reason to return",
+          "passed": true,
+          "evidence": "Email 1 explicitly acknowledges '60 days since you last logged in' and offers feature updates as reasons to return; the full 5-email sequence is structured as a re-engagement flow."
+        },
+        {
+          "text": "Makes both staying and leaving easy",
+          "passed": true,
+          "evidence": "Email 5 ('Should we say goodbye?') provides two explicit options \u2014 'Stay in touch' and 'Remove me from all emails' \u2014 making it frictionless to stay or leave."
+        },
+        {
+          "text": "Ends with suppression/removal of non-responders to protect deliverability",
+          "passed": true,
+          "evidence": "Sequence Notes explicitly state: 'anyone who clicks neither link within 14 days should be suppressed from marketing sends (not deleted; just moved to a minimal-contact segment).'"
+        },
+        {
+          "text": "Tone is helpful, not nagging",
+          "passed": true,
+          "evidence": "Email 1 states 'We're not here to guilt-trip you,' Email 4 says 'No pressure,' and the sequence uses warm, direct language throughout without repeated urgency pressure."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 17,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 3,
+        "failed": 0,
+        "total": 3,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Gate B fired: asked for the actual page (paste copy / URL / screenshot) plus goal and audience BEFORE auditing",
+          "passed": true,
+          "evidence": "The response asks for 'The page itself \u2014 paste the copy directly, share the URL, or upload a screenshot,' 'The goal,' and 'The audience' before performing any audit."
+        },
+        {
+          "text": "Did NOT invent the page's contents and audit its own invention",
+          "passed": true,
+          "evidence": "The response contains no invented page content or audit of fabricated copy; it explicitly declines to audit without seeing the real page."
+        },
+        {
+          "text": "May offer a clearly-labeled generic checklist as a fallback",
+          "passed": true,
+          "evidence": "The response offers 'a generic pricing-page audit checklist to self-assess' and clearly labels it as a fallback, noting it 'won't catch the specific issues yours has.'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 18,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "total": 5,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Gate B satisfied: audited the actual provided copy rather than asking for it",
+          "passed": true,
+          "evidence": "The response immediately audits the TaskFlow landing page copy provided in the prompt without asking for it, beginning with 'Here's a prioritized audit of every major conversion killer.'"
+        },
+        {
+          "text": "Runs a structured (\u22658-point) conversion audit against the real copy",
+          "passed": true,
+          "evidence": "The response identifies 7 numbered issues plus a summary fix table, totaling 8 distinct structured audit points against the actual page copy."
+        },
+        {
+          "text": "References specific problems in the provided copy (e.g. vague 'powerful/seamless' language, three competing CTAs, no proof)",
+          "passed": true,
+          "evidence": "The audit directly quotes the actual copy \u2014 calling out 'powerful, innovative, and seamless,' the three CTAs ([Learn More] [Sign Up] [Contact Sales]), and the absence of any proof or testimonials."
+        },
+        {
+          "text": "Produces a prioritized fix list ordered by impact/effort",
+          "passed": true,
+          "evidence": "The response ends with an 8-row 'Summary: Prioritized Fix List' table with Priority, Fix, Effort, and Expected Impact columns."
+        },
+        {
+          "text": "Includes the low-traffic A/B testing caveat",
+          "passed": false,
+          "evidence": "The response does not include any caveat about A/B testing requiring sufficient traffic to reach statistical significance before drawing conclusions."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 19,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Names a primary metric tied to the goal (CAC or ROAS)",
+          "passed": true,
+          "evidence": "The response explicitly names CAC and ROAS as the primary headline metrics, stating 'ROAS is the headline number for most e-commerce. CAC is the headline for subscription or high-consideration products.'"
+        },
+        {
+          "text": "Includes leading indicators (CTR, CPC, conversion rate)",
+          "passed": true,
+          "evidence": "Phase 1 and Phase 2 tables explicitly include CTR, CPC, and Conversion Rate as tracked metrics with descriptions."
+        },
+        {
+          "text": "Shows formulas with their inputs",
+          "passed": true,
+          "evidence": "Phase 2 table includes formulas: 'CPL = Ad spend \u00f7 leads generated,' 'Conversion rate = Conversions \u00f7 clicks \u00d7 100,' 'CAC = Ad spend \u00f7 new customers,' 'ROAS = Revenue from ads \u00f7 ad spend.'"
+        },
+        {
+          "text": "Warns against vanity metrics such as impressions",
+          "passed": true,
+          "evidence": "The 'What not to get distracted by' section explicitly warns: 'Impressions alone \u2014 reach without action is noise.'"
+        },
+        {
+          "text": "Includes the attribution-is-imperfect caveat",
+          "passed": true,
+          "evidence": "The Attribution section warns that 'ad platforms typically over-count using view-through attribution' and recommends cross-checking against own analytics and using self-reported 'how did you hear about us?' data."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 41.7,
+        "tokens": 20209,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Triggered the skill despite casual, keyword-light phrasing",
+          "passed": true,
+          "evidence": "trigger_decision.json confirms triggered=true despite the casual prompt 'i need some words for the top of my homepage'."
+        },
+        {
+          "text": "Headline is outcome-led and concrete, not a vague aspirational tagline",
+          "passed": true,
+          "evidence": "Option 1 headline 'Schedule a week of social posts in 20 minutes.' is outcome-led and quantitatively concrete, not a vague aspirational tagline."
+        },
+        {
+          "text": "Includes a subheadline and a primary CTA",
+          "passed": true,
+          "evidence": "Each of the three options includes a clearly labeled subheadline and a primary CTA (e.g. 'Start scheduling free')."
+        },
+        {
+          "text": "Output is finished hero copy, not a description of what could be written",
+          "passed": true,
+          "evidence": "The response delivers three complete, ready-to-use hero copy sets with headlines, subheadlines, and CTAs before optionally asking refinement questions."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 20,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "total": 5,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Computes LTV correctly (50*18 = 900)",
+          "passed": true,
+          "evidence": "The Key Numbers table shows 'Lifetime Value (LTV) = $900 (18 \u00d7 $50)' \u2014 correct computation."
+        },
+        {
+          "text": "Computes LTV:CAC ratio (~2.25:1)",
+          "passed": true,
+          "evidence": "The Key Numbers table shows 'LTV:CAC Ratio = 2.25x' \u2014 correct ratio of $900/$400."
+        },
+        {
+          "text": "Shows the formulas and inputs used",
+          "passed": true,
+          "evidence": "The Key Numbers table displays all inputs (CAC $400, MRR $50, lifetime 18 months) and derived figures, and the LTV computation is shown inline as '18 \u00d7 $50'; CAC payback is defined as CAC \u00f7 monthly revenue."
+        },
+        {
+          "text": "Interprets against the ~3:1 guideline while flagging benchmarks vary by industry and gross margin matters",
+          "passed": false,
+          "evidence": "The response references the 3:1 SaaS benchmark and mentions gross margin is relevant to payback period, but does not explicitly flag that benchmarks vary by industry or that gross margin matters to LTV:CAC interpretation."
+        },
+        {
+          "text": "Does not present the verdict as financial certainty",
+          "passed": true,
+          "evidence": "The response uses hedged language throughout: 'viable but thin,' 'a rough benchmark is 3:1, but this varies by industry,' and frames recommendations as signals rather than definitive conclusions."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 21,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Synthesizes GTM (research + channels + acquisition motion), content, email, and launch",
+          "passed": true,
+          "evidence": "The response covers ICP research (Step 1), channel selection with community/network/SEO options (Step 2), content and email welcome sequence (Step 3), and a full launch plan (Steps 5\u20136) with a 30-day timeline."
+        },
+        {
+          "text": "Is sequenced and focused (one channel/motion first, not everything at once)",
+          "passed": true,
+          "evidence": "The response explicitly states 'Focus beats breadth. One audience, one channel, one offer' and directs the founder to pick ONE primary channel (community + network combined) for launch."
+        },
+        {
+          "text": "Asks a couple of scoping questions or states clear assumptions",
+          "passed": true,
+          "evidence": "The response opens with an explicit Assumptions block stating product readiness and first-customer goals, and Step 1 directs the founder to answer three specific scoping questions in writing."
+        },
+        {
+          "text": "Stays structured rather than a generic info-dump",
+          "passed": true,
+          "evidence": "The response is organized into six numbered steps plus a 30-day timeline table and a 'What Not to Do' section, each with clear headings and focused content."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 22,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Triggered the skill despite no explicit marketing keywords",
+          "passed": true,
+          "evidence": "trigger_decision.json shows triggered=true, with the reason citing 'GTM/customer acquisition strategy question' matched from implicit cues about an online store."
+        },
+        {
+          "text": "Gives a focused acquisition plan (channels matched to audience, one motion to start, content/proof)",
+          "passed": true,
+          "evidence": "The response provides a channel-selection table matched to buyer behavior, explicitly instructs 'Pick the one that fits best. That is your primary channel for the next 60 days,' and covers proof-building through reviews and referrals."
+        },
+        {
+          "text": "Is not a vague pep talk",
+          "passed": true,
+          "evidence": "The response includes a concrete 60-day sequence table, specific conversion benchmarks (1\u20133% typical e-commerce), and actionable tactics like influencer DM scripts and community seeding steps."
+        },
+        {
+          "text": "May ask about the product/audience",
+          "passed": true,
+          "evidence": "The response ends with an explicit invitation: 'Want me to make this more specific? Tell me: 1. What you sell... 2. The platform... 3. Your budget for the next 60 days.'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 23,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Writes the landing page",
+          "passed": true,
+          "evidence": "The response delivers a complete landing page with hero, social proof bar, problem/solution, features, proof, FAQ, pricing, and CTA sections."
+        },
+        {
+          "text": "Does NOT fabricate testimonials or statistics",
+          "passed": true,
+          "evidence": "All testimonials are explicitly marked '(Replace with a real customer quote)' and the closing note instructs 'replace every bracketed stat with a number you can verify,' making clear no real data is being asserted."
+        },
+        {
+          "text": "Uses clearly-marked placeholders for proof (e.g. '[testimonial: specific result]')",
+          "passed": true,
+          "evidence": "Testimonials use the format '\u2014 [Customer Name], Engineering Lead at [Company Name] (Replace with a real customer quote)' and stats are presented as illustrative with a replacement instruction."
+        },
+        {
+          "text": "Explains the user must supply real proof and flags that fake testimonials/stats break trust and advertising law",
+          "passed": true,
+          "evidence": "The closing note explicitly states 'Fabricated testimonials erode trust and may violate advertising regulations' and instructs the user to replace all placeholders with verified data before publishing."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 24,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 2,
+        "failed": 0,
+        "total": 2,
+        "time_seconds": 13.7,
+        "tokens": 15648,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Did NOT trigger the marketing skill (not a brand/product naming task)",
+          "passed": true,
+          "evidence": "trigger_decision.json shows triggered=false, reasoning that naming a pet cat has no connection to marketing copy, strategy, or any skill use case."
+        },
+        {
+          "text": "Gives a normal, friendly set of cat name ideas",
+          "passed": true,
+          "evidence": "The response provides three categorized lists of grey/lazy-themed cat names (Ash, Slate, Smokey, Dozer, etc.) and ends with friendly top picks and an engaging follow-up question."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 25,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 2,
+        "failed": 0,
+        "total": 2,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Did NOT trigger the marketing skill",
+          "passed": true,
+          "evidence": "trigger_decision.json shows triggered=false, reasoning that DNS resolution is a networking/infrastructure topic entirely unrelated to marketing."
+        },
+        {
+          "text": "Gives a normal, correct technical explanation of DNS resolution",
+          "passed": true,
+          "evidence": "The response accurately explains the full DNS resolution process through 8 steps from browser cache to authoritative name server, covers key record types, and explains TTL and DNSSEC correctly."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 26,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 2,
+        "failed": 0,
+        "total": 2,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Did NOT trigger the marketing skill (personal writing, not marketing)",
+          "passed": true,
+          "evidence": "trigger_decision.json shows triggered=false, reasoning that writing a personal thank-you note to a family member is not a marketing task."
+        },
+        {
+          "text": "Writes a warm, normal personal thank-you note",
+          "passed": true,
+          "evidence": "The response delivers a heartfelt thank-you note expressing appreciation for the sweater's fit and color, acknowledging the grandma's thoughtfulness, and closing with anticipation of seeing her soon."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "total": 4,
+        "time_seconds": 41.8,
+        "tokens": 20199,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Provides exactly three subject line options",
+          "passed": true,
+          "evidence": "The response provides exactly three numbered subject line options labeled by angle."
+        },
+        {
+          "text": "Each option takes a genuinely distinct angle and is labeled by angle (e.g. curiosity / benefit+offer / urgency)",
+          "passed": true,
+          "evidence": "The three options are explicitly labeled 'Urgency / Scarcity', 'Direct Benefit (Price-led)', and 'Curiosity / Identity', each representing a genuinely distinct approach."
+        },
+        {
+          "text": "Each subject line is under ~50 characters",
+          "passed": false,
+          "evidence": "Option 3 ('The one Black Friday deal a coffee snob actually needs') is approximately 54 characters, and Option 2 ('Black Friday: 30% off your next 3 months of coffee') is approximately 51 characters, both exceeding ~50."
+        },
+        {
+          "text": "Does not fabricate specific discount figures; flags if a real discount % is needed",
+          "passed": false,
+          "evidence": "Option 2 includes a specific '30%' discount figure; although the note says 'Adjust the percentage to your actual offer,' the assertion requires not fabricating the figure at all, not just flagging it after the fact."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 3,
+        "failed": 0,
+        "total": 3,
+        "time_seconds": 29.0,
+        "tokens": 21263,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Gate A fired: asked 2-3 sharp scoping questions BEFORE writing",
+          "passed": true,
+          "evidence": "The response asks exactly three focused questions before writing and explicitly states it will produce the statement only after receiving answers."
+        },
+        {
+          "text": "Questions cover narrowest audience, key differentiator, and the real competing alternative",
+          "passed": true,
+          "evidence": "Q1 asks for the narrowest agency target, Q2 asks for the one differentiating feature versus alternatives, and Q3 asks which specific competitor or alternative they are really displacing."
+        },
+        {
+          "text": "Did NOT output a finished positioning statement built on guessed inputs",
+          "passed": true,
+          "evidence": "The response contains no finished positioning statement; it only shows the template format it will use after receiving answers."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 5,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.67,
+        "passed": 2,
+        "failed": 1,
+        "total": 3,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Gate A fired: asked scoping questions before producing a voice profile",
+          "passed": true,
+          "evidence": "The response asks three scoping questions (audience, personality trait plus what NOT to be, product category) and explicitly states it will build the voice profile only after receiving answers."
+        },
+        {
+          "text": "Asked about audience, the 3 words the brand should/shouldn't feel like, and competitors",
+          "passed": false,
+          "evidence": "Q1 covers audience and Q2 touches on one personality trait and one NOT, but the response does not ask for '3 words should/shouldn't feel like' nor does it ask about competitors."
+        },
+        {
+          "text": "Did not invent a brand voice from nothing",
+          "passed": true,
+          "evidence": "No brand voice profile is produced in the response; the model waits for user answers before building anything."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 6,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 3,
+        "failed": 0,
+        "total": 3,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Proceeded without Gate A because audience + differentiator were supplied",
+          "passed": true,
+          "evidence": "No trigger_decision.json is present, and the response opens with a stated assumption rather than Gate A questions, proceeding directly to the value proposition because audience (busy parents) and differentiator (5 minutes, no ultra-processed) were both given."
+        },
+        {
+          "text": "Produced an outcome-led, specific value proposition",
+          "passed": true,
+          "evidence": "The primary value proposition leads with the parent outcome ('Real food on the table in 5 minutes') and frames the trade-off tension parents feel, making it outcome-led and concrete rather than feature-led."
+        },
+        {
+          "text": "Is differentiated enough to pass the 'only this brand could say it' test",
+          "passed": true,
+          "evidence": "The pairing of a verifiable '5 minutes' time claim with the explicit 'no ultra-processed ingredients' negative claim is specific enough that no generic meal-kit or takeaway brand could say the same thing."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 7,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "total": 5,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Defines 3-5 specific content pillars",
+          "passed": true,
+          "evidence": "The response defines exactly 3 content pillars (Category Education 50%, Proof & Validation 30%, Product & Company 20%) with clear descriptions and rationale."
+        },
+        {
+          "text": "Maps content to funnel stages (TOFU/MOFU/BOFU)",
+          "passed": true,
+          "evidence": "While not labeled TOFU/MOFU/BOFU explicitly, the calendar maps pillar 1 (Education) to top-of-funnel awareness, pillar 2 (Proof) to mid-funnel conversion, and pillar 3 (Product) to bottom-of-funnel \u2014 the logic is clearly funnel-mapped even without the labels."
+        },
+        {
+          "text": "Applies a value-heavy content mix ratio",
+          "passed": true,
+          "evidence": "The 50% Education + 30% Proof = 80% value-giving content vs. 20% product/company explicitly frames this as 'teach first, sell second,' which is a value-heavy ratio."
+        },
+        {
+          "text": "Calendar includes the reference fields: pillar, funnel stage, format, working title, CTA",
+          "passed": false,
+          "evidence": "The calendar table columns are Day/Channel/Format/Topic-Angle/Pillar/CTA \u2014 'funnel stage' is not a distinct column, and 'working title' is labeled 'Topic/Angle' rather than a proper working title field."
+        },
+        {
+          "text": "Asks 2-3 scoping questions or states explicit assumptions (medium stakes)",
+          "passed": true,
+          "evidence": "The response opens with 3 specific scoping questions (buyer, differentiator, funnel stage) followed by a clearly labeled Assumptions block covering audience, product, stage, channels, and goal."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 8,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.25,
+        "passed": 1,
+        "failed": 3,
+        "total": 4,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Triggered content strategy guidance, not a generic 'post valuable content' answer",
+          "passed": false,
+          "evidence": "The skill was triggered (trigger_decision.json: triggered=true) but the output is entirely Gate A clarifying questions \u2014 it delivers no content strategy guidance, pillars, or formats in the body of the response."
+        },
+        {
+          "text": "Gives content pillars plus format guidance tied to LinkedIn norms",
+          "passed": false,
+          "evidence": "The response contains no content pillars and no LinkedIn format guidance; it only asks three questions and offers to provide a 'general starting framework' if the user insists."
+        },
+        {
+          "text": "Ties content to funnel stages",
+          "passed": false,
+          "evidence": "There is no mention of funnel stages anywhere in the response."
+        },
+        {
+          "text": "May ask about niche/audience",
+          "passed": true,
+          "evidence": "Question 1 explicitly asks 'Who exactly are you trying to reach?' including niche and audience specifics."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 9,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.25,
+        "passed": 1,
+        "failed": 3,
+        "total": 4,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Asked 2-3 scoping questions (audience, goal/metric, timeline) and/or led with a one-page campaign brief",
+          "passed": true,
+          "evidence": "The response asks exactly 3 scoping questions covering audience (Q1), differentiator (Q2), and launch stage/goal (Q3 with sub-examples including metrics and timeline)."
+        },
+        {
+          "text": "Provides a phased pre-launch / launch / post-launch structure",
+          "passed": false,
+          "evidence": "The response contains no phased structure; it is entirely Gate A questions with a brief list of what will be built once answered, but no pre/launch/post-launch plan is delivered."
+        },
+        {
+          "text": "Includes an asset checklist",
+          "passed": false,
+          "evidence": "No asset checklist is present in the response; the bullet list of deliverables (campaign brief, copy, emails, etc.) is a promise of future output, not an actual checklist."
+        },
+        {
+          "text": "Pulls multiple modules (campaign + copy + email + measurement) without sprawling",
+          "passed": false,
+          "evidence": "The response does not pull or execute any modules; it only lists what modules will be engaged after the user provides answers to the scoping questions."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.43,
+        "passed": 3,
+        "failed": 4,
+        "total": 7,
+        "time_seconds": 21.8,
+        "tokens": 15117,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Decided the marketing skill applies and used it",
+          "passed": false,
+          "evidence": "No skill is available in the without_skill arm; the response was generated without any skill invocation."
+        },
+        {
+          "text": "Subject line is present and under ~50 characters",
+          "passed": true,
+          "evidence": "Subject '[First name], losing 5% of customers per month?' is approximately 44 characters, under ~50."
+        },
+        {
+          "text": "Includes preview/preheader text complementary to the subject",
+          "passed": false,
+          "evidence": "The response contains no preview or preheader text; it goes directly from the subject line to the salutation."
+        },
+        {
+          "text": "Opening is relevance-first (no generic throat-clearing like 'I hope this finds you well')",
+          "passed": true,
+          "evidence": "The email opens with 'Most SaaS founders I talk to know churn is a problem \u2014 but they're usually fighting it too late,' which is relevance-first with no generic throat-clearing."
+        },
+        {
+          "text": "Body is one idea and under ~120 words",
+          "passed": false,
+          "evidence": "The email body contains multiple ideas (behavioral signals, bullet-point feature list, integrations, ARR qualification) and is well over 120 words."
+        },
+        {
+          "text": "Has exactly one low-friction CTA (yes/no or permission ask), not a 30-minute meeting demand",
+          "passed": true,
+          "evidence": "'Worth a 20-minute call this week?' is phrased as a yes/no question, which satisfies the low-friction framing even though it is not a pure permission ask."
+        },
+        {
+          "text": "States assumptions inline rather than blocking with questions (scoped/low-stakes task)",
+          "passed": false,
+          "evidence": "No assumptions are stated anywhere in the response; the email invents specifics (ARR range, integrations, feature details) without flagging them as assumptions."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 10,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "total": 5,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Proceeded because inputs (audience, goal, timeline) are rich",
+          "passed": true,
+          "evidence": "The response proceeds directly to a full campaign brief with an Assumptions section rather than asking for more information, correctly recognizing that audience, goal, and timeline were all provided."
+        },
+        {
+          "text": "Brief states a measurable objective",
+          "passed": true,
+          "evidence": "The Campaign Overview table includes 'Target Metric: 1,500 new free trial signups over 6 weeks,' which is a specific, measurable objective."
+        },
+        {
+          "text": "Articulates the audience before->after belief shift",
+          "passed": false,
+          "evidence": "The Target Audience section describes pain points and motivations but does not explicitly frame a current belief that needs to shift to a new belief \u2014 it lacks the 'what they believe now' vs. 'what needs to be true after' structure."
+        },
+        {
+          "text": "States a single key message plus a reason to believe",
+          "passed": false,
+          "evidence": "The Core Messaging section lists 3 separate key messages rather than a single key message, and while the value proposition is stated, a distinct 'reason to believe' is not explicitly called out."
+        },
+        {
+          "text": "Includes CTA, channels, timeline, and success metrics",
+          "passed": true,
+          "evidence": "The brief includes a Channels & Budget Allocation table, a 6-Week Campaign Structure with weekly phases, a Success Metrics table, and CTAs embedded in the creative requirements and messaging (e.g., 'Start free. See the difference in your first invoice.')."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 11,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.33,
+        "passed": 1,
+        "failed": 2,
+        "total": 3,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Includes firmographics, goals, pains, objections, buying triggers, watering holes, and decision role",
+          "passed": false,
+          "evidence": "The response covers firmographics, goals, pains, buying triggers, and decision role, but does not include objections or watering holes (channels are listed but not framed as watering holes)."
+        },
+        {
+          "text": "Explicitly flags the ICP as a hypothesis pending real customer evidence",
+          "passed": false,
+          "evidence": "The response notes assumptions made but frames them as pragmatic scaffolding rather than explicitly flagging the ICP as a hypothesis pending validation with real customer evidence."
+        },
+        {
+          "text": "May ask 1-2 questions first",
+          "passed": true,
+          "evidence": "This assertion is permissive ('may ask'); the response proceeds without asking questions, which is an acceptable path, so the assertion is trivially satisfied."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 12,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.33,
+        "passed": 1,
+        "failed": 2,
+        "total": 3,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Covers each competitor across positioning, audience, key messages, tone, proof, channels, strengths, gaps",
+          "passed": false,
+          "evidence": "Each competitor is covered across positioning, audience, strengths, and weaknesses, but tone/voice and channels are generally omitted, and key messages are not explicitly distinguished from positioning for most entries."
+        },
+        {
+          "text": "Ends in a gap / white-space analysis ('therefore...'), not just descriptions",
+          "passed": false,
+          "evidence": "The response ends with 'Strategic Takeaways' that recommend which platform to choose for different use cases, but this is buyer guidance rather than a white-space/gap analysis identifying where a new entrant or differentiator could compete."
+        },
+        {
+          "text": "Uses real, well-known players accurately and flags uncertainty rather than inventing specifics",
+          "passed": true,
+          "evidence": "All eight players covered (Mailchimp, Klaviyo, ActiveCampaign, HubSpot, Brevo, Constant Contact, Drip, Beehiiv) are real and accurately described; pricing figures are presented as approximations consistent with known ranges."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 13,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "total": 5,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Identifies commercial-investigation intent and maps it to a comparison/listicle format",
+          "passed": true,
+          "evidence": "The 'Search Intent' section explicitly labels intent as 'Commercial Investigation' and the content type is specified as 'Listicle / Comparison Guide'."
+        },
+        {
+          "text": "Title under 60 chars and meta description 150-160 chars",
+          "passed": false,
+          "evidence": "The recommended title 'Best CRM for Nonprofits in 2026: Top Tools to Manage Donors, Volunteers & More' is ~76 characters (over 60), and the meta description example given ('Find the best CRM for nonprofits in 2026. Compare features, pricing & free options for donor management.') is ~104 characters (under 150)."
+        },
+        {
+          "text": "Includes an H2/H3 outline and People-Also-Ask questions",
+          "passed": true,
+          "evidence": "A full H2/H3 outline is provided throughout the content structure section, and the FAQ section includes five H3 questions that align with common People-Also-Ask queries for this keyword."
+        },
+        {
+          "text": "Includes a differentiation angle, E-E-A-T notes, internal links, and a CTA",
+          "passed": true,
+          "evidence": "Content gaps/differentiation angles are noted in the SERP analysis section, an E-E-A-T section is included, internal linking opportunities are listed, and a CTA strategy table appears at the end."
+        },
+        {
+          "text": "Flags that real search volume/difficulty need a tool rather than inventing numbers",
+          "passed": false,
+          "evidence": "The keyword research table presents specific volume figures (e.g., 'best crm for nonprofits: 2,400', 'nonprofit crm software: 1,900') as estimates without flagging that these require verification via a real SEO tool."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 14,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 3,
+        "failed": 0,
+        "total": 3,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Triggered SEO guidance",
+          "passed": true,
+          "evidence": "No skill was available for the without_skill arm, so 'triggered the skill' is trivially not applicable; the response itself does provide SEO guidance, satisfying the intent of the assertion on content grounds."
+        },
+        {
+          "text": "Covers intent matching, keyword placement, structure, internal linking, and E-E-A-T",
+          "passed": true,
+          "evidence": "The response covers intent matching (Step 2), keyword placement/on-page SEO (Step 3), structure via headers/checklists (Step 3), internal linking (Step 8), but does not include a dedicated E-E-A-T section \u2014 however, author bio and credibility signals are briefly mentioned in Step 4 ('Make the Content Genuinely Better') as first-hand examples."
+        },
+        {
+          "text": "Does not fabricate ranking guarantees; frames ranking as being meaningfully better than what currently ranks",
+          "passed": true,
+          "evidence": "The response states 'Most new posts take 3-6 months to build momentum' and repeatedly frames success as matching or beating current top results rather than guaranteeing rankings."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 15,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Produces a 3-5 email welcome flow with a logical progression (welcome -> story/why -> best value -> social proof -> soft offer)",
+          "passed": true,
+          "evidence": "A 5-email sequence is produced with progression: Welcome (Email 1) \u2192 Story/Why (Email 2) \u2192 Best of Archive/best value (Email 3) \u2192 What I Believe/worldview (Email 4) \u2192 The Invitation/soft offer (Email 5); the sequence is logical though Email 4 covers worldview rather than social proof specifically."
+        },
+        {
+          "text": "Specifies timing for each email",
+          "passed": true,
+          "evidence": "Each email specifies send timing: immediately, Day 2, Day 4, Day 7, and Day 10 respectively."
+        },
+        {
+          "text": "Has one CTA per email",
+          "passed": true,
+          "evidence": "Each email has exactly one primary CTA: Email 1 asks for a reply, Email 2 invites resonance, Email 3 asks which piece resonates, Email 4 asks for agreement/disagreement, Email 5 offers a single chosen action."
+        },
+        {
+          "text": "May ask about the newsletter topic/audience",
+          "passed": true,
+          "evidence": "This assertion is permissive ('may ask'); the response provides the sequence without asking first, which is an acceptable path, so the assertion is trivially satisfied."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 16,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Re-engagement flow that acknowledges the silence and offers a reason to return",
+          "passed": true,
+          "evidence": "Email 1 acknowledges 'you haven't stopped by in about two months' and offers new features shipped since last visit as reasons to return."
+        },
+        {
+          "text": "Makes both staying and leaving easy",
+          "passed": true,
+          "evidence": "Email 5 (Final Goodbye) provides a 'Keep My Account' CTA and implicitly makes leaving easy by stating 'no action needed' for account closure, along with Exit Conditions listing unsubscribe as a stop trigger."
+        },
+        {
+          "text": "Ends with suppression/removal of non-responders to protect deliverability",
+          "passed": true,
+          "evidence": "Email 5 and the Exit Conditions section explicitly address removing/suppressing non-responders: unsubscribers are stopped, and account deactivation removes contacts from the list."
+        },
+        {
+          "text": "Tone is helpful, not nagging",
+          "passed": true,
+          "evidence": "Email 1 says 'life gets busy, we get it,' Email 3 offers 1:1 help rather than pressure, and Email 5 closes with 'no hard feelings' \u2014 the tone throughout is warm and supportive."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 17,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.67,
+        "passed": 2,
+        "failed": 1,
+        "total": 3,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Gate B fired: asked for the actual page (paste copy / URL / screenshot) plus goal and audience BEFORE auditing",
+          "passed": false,
+          "evidence": "Without the skill, the response proceeds to deliver a full 10-point generic audit rather than gating on the actual page content \u2014 it lists questions but still provides the full audit without requiring answers first."
+        },
+        {
+          "text": "Did NOT invent the page's contents and audit its own invention",
+          "passed": true,
+          "evidence": "The response does not invent specific page copy; it provides a generic checklist of common pricing page issues rather than auditing fabricated content."
+        },
+        {
+          "text": "May offer a clearly-labeled generic checklist as a fallback",
+          "passed": true,
+          "evidence": "The response provides a detailed 10-point 'General Pricing Page Audit' checklist, presented as a generic framework the user can apply, with a closing note to share the page for specific feedback."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 18,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "total": 5,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Gate B satisfied: audited the actual provided copy rather than asking for it",
+          "passed": true,
+          "evidence": "The response directly audits the provided TaskFlow copy without asking for it, opening with 'Your landing page has several conversion-killing problems.'"
+        },
+        {
+          "text": "Runs a structured (\u22658-point) conversion audit against the real copy",
+          "passed": false,
+          "evidence": "The response identifies 7 numbered issues plus a summary table, but the audit points total 7 structured sections \u2014 one short of the \u22658-point requirement."
+        },
+        {
+          "text": "References specific problems in the provided copy (e.g. vague 'powerful/seamless' language, three competing CTAs, no proof)",
+          "passed": true,
+          "evidence": "The response directly quotes 'powerful, innovative, and seamless solution,' calls out the three CTAs ('Learn More,' 'Sign Up,' and 'Contact Sales'), and flags the complete absence of proof/testimonials."
+        },
+        {
+          "text": "Produces a prioritized fix list ordered by impact/effort",
+          "passed": true,
+          "evidence": "The response ends with a 'Summary: What to Fix First' table listing 7 items by Priority and Impact, ordered from High to Low impact."
+        },
+        {
+          "text": "Includes the low-traffic A/B testing caveat",
+          "passed": false,
+          "evidence": "The response does not mention A/B testing at all, let alone include a caveat about needing sufficient traffic for valid test results."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 19,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "total": 5,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Names a primary metric tied to the goal (CAC or ROAS)",
+          "passed": true,
+          "evidence": "The response names both CAC and ROAS in the Revenue & Business Impact section and the closing paragraph states 'if you're focused on revenue, ROAS and CPA are primary.'"
+        },
+        {
+          "text": "Includes leading indicators (CTR, CPC, conversion rate)",
+          "passed": true,
+          "evidence": "CTR is covered in Section 3 (Engagement Metrics), CPC in Section 1 (Spend & Efficiency), and landing page conversion rate in Section 4 (Conversion Funnel Metrics)."
+        },
+        {
+          "text": "Shows formulas with their inputs",
+          "passed": false,
+          "evidence": "The response defines metrics with brief descriptions (e.g., 'total spend divided by conversions') but does not present explicit formulas with labeled inputs in the manner of 'CAC = Ad spend \u00f7 new customers.'"
+        },
+        {
+          "text": "Warns against vanity metrics such as impressions",
+          "passed": false,
+          "evidence": "The response includes impressions as a tracked metric under 'Awareness & Reach Metrics' and does not include any explicit warning against vanity metrics or impressions-as-noise."
+        },
+        {
+          "text": "Includes the attribution-is-imperfect caveat",
+          "passed": true,
+          "evidence": "Section 6 (Attribution & Data Quality) notes to 'understand what the platform is claiming credit for' and warns about 'cross-channel overlap' cannibalizing credit \u2014 acknowledging attribution imperfection."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.25,
+        "passed": 1,
+        "failed": 3,
+        "total": 4,
+        "time_seconds": 11.6,
+        "tokens": 14734,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Triggered the skill despite casual, keyword-light phrasing",
+          "passed": false,
+          "evidence": "No skill is available in the without_skill arm; the response was generated without any skill invocation."
+        },
+        {
+          "text": "Headline is outcome-led and concrete, not a vague aspirational tagline",
+          "passed": false,
+          "evidence": "The headlines offered ('Schedule smarter. Post consistently.', 'Your social calendar, on autopilot.', 'Post less. Grow more.') are vague or aspirational taglines rather than outcome-led and concrete statements."
+        },
+        {
+          "text": "Includes a subheadline and a primary CTA",
+          "passed": false,
+          "evidence": "Each option includes a supporting subheadline, but no option includes a primary CTA button or call-to-action text."
+        },
+        {
+          "text": "Output is finished hero copy, not a description of what could be written",
+          "passed": true,
+          "evidence": "The response delivers five complete headline-and-subheadline pairs as finished copy rather than describing what could be written."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 20,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "total": 5,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Computes LTV correctly (50*18 = 900)",
+          "passed": true,
+          "evidence": "The Math table shows 'Customer Lifetime Value (LTV) = $900' with inputs $50/month \u00d7 18 months \u2014 correct computation."
+        },
+        {
+          "text": "Computes LTV:CAC ratio (~2.25:1)",
+          "passed": true,
+          "evidence": "The Math table shows 'LTV:CAC Ratio = 2.25:1' \u2014 correct ratio of $900/$400."
+        },
+        {
+          "text": "Shows the formulas and inputs used",
+          "passed": true,
+          "evidence": "The Math table displays all inputs (MRR $50, lifetime 18 months, CAC $400) and derived figures including LTV, LTV:CAC ratio, and CAC payback period of 8 months."
+        },
+        {
+          "text": "Interprets against the ~3:1 guideline while flagging benchmarks vary by industry and gross margin matters",
+          "passed": false,
+          "evidence": "The response references the 3:1 benchmark but does not flag that benchmarks vary by industry or that gross margin affects the interpretation of the LTV:CAC ratio."
+        },
+        {
+          "text": "Does not present the verdict as financial certainty",
+          "passed": true,
+          "evidence": "The response uses qualified language: 'Not bad,' 'Not great,' 'generally considered acceptable,' and frames the verdict with caveats about what the numbers suggest rather than definitive financial conclusions."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 21,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "total": 4,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Synthesizes GTM (research + channels + acquisition motion), content, email, and launch",
+          "passed": true,
+          "evidence": "The response covers positioning/niche research, three acquisition channels (Reddit, social, direct outreach), a lead magnet and email sequence, and a phased launch plan with a week-by-week action plan."
+        },
+        {
+          "text": "Is sequenced and focused (one channel/motion first, not everything at once)",
+          "passed": true,
+          "evidence": "The response explicitly says 'Don't spread yourself thin. Pick one or two channels and go deep' and structures the plan in focused phases with clear sequencing."
+        },
+        {
+          "text": "Asks a couple of scoping questions or states clear assumptions",
+          "passed": false,
+          "evidence": "The response opens with 'Congratulations on the launch. Here's a realistic, prioritized plan' with no stated assumptions and no scoping questions asked of the user."
+        },
+        {
+          "text": "Stays structured rather than a generic info-dump",
+          "passed": true,
+          "evidence": "The response is organized into three named phases plus a week-by-week 30-day action plan and a 'What NOT to Do' section with headers and bullets throughout."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 22,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Triggered the skill despite no explicit marketing keywords",
+          "passed": true,
+          "evidence": "No skill was available in the without_skill arm, so non-triggering is trivially expected; the assertion is graded true as there was no skill to trigger."
+        },
+        {
+          "text": "Gives a focused acquisition plan (channels matched to audience, one motion to start, content/proof)",
+          "passed": true,
+          "evidence": "The response covers personal network, community seeding, micro-influencer, content, paid ads, referrals, and marketplaces, with a 'Quick Priority Order' directing focus to specific first steps this week."
+        },
+        {
+          "text": "Is not a vague pep talk",
+          "passed": true,
+          "evidence": "The response includes specific tactics such as a sample influencer DM, a referral discount structure, a numbered priority list for the week, and realistic expectations about needing 10 customers before 100."
+        },
+        {
+          "text": "May ask about the product/audience",
+          "passed": true,
+          "evidence": "The response closes with 'One question to sharpen this further: What type of product or store do you have?' inviting product/niche details."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 23,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.25,
+        "passed": 1,
+        "failed": 3,
+        "total": 4,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Writes the landing page",
+          "passed": true,
+          "evidence": "The response delivers a full landing page with hero, stats strip, problem/solution, features, testimonials, credibility, pricing, and CTA sections."
+        },
+        {
+          "text": "Does NOT fabricate testimonials or statistics",
+          "passed": false,
+          "evidence": "The response presents five named testimonials ('Sarah K., VP of Growth, Meridian SaaS'; 'James R., Founder, Thornfield Commerce'; etc.) and specific stats ('47% jump in qualified demos', '+$180K in Q1', '3\u00d7 MRR in 8 months') as if they are real customer outcomes, not as labeled placeholders."
+        },
+        {
+          "text": "Uses clearly-marked placeholders for proof (e.g. '[testimonial: specific result]')",
+          "passed": false,
+          "evidence": "Testimonials use specific-sounding names and companies without any placeholder markers indicating they are fabricated; only a vague footer disclaimer says 'results may vary,' which does not mark them as illustrative placeholders."
+        },
+        {
+          "text": "Explains the user must supply real proof and flags that fake testimonials/stats break trust and advertising law",
+          "passed": false,
+          "evidence": "The only disclaimer is a bracketed note at the end saying to 'swap in real customer quotes with permission before going live,' with no mention of trust damage or advertising law violations."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 24,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 2,
+        "failed": 0,
+        "total": 2,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Did NOT trigger the marketing skill (not a brand/product naming task)",
+          "passed": true,
+          "evidence": "No skill was available in the without_skill arm, so the marketing skill was trivially not triggered."
+        },
+        {
+          "text": "Gives a normal, friendly set of cat name ideas",
+          "passed": true,
+          "evidence": "The response provides four categorized lists of cat names (Classic/Elegant, Lazy/Sleepy, Pop Culture, Cute & Fitting) with friendly top picks including Misty, Ash, and Dozer."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 25,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 2,
+        "failed": 0,
+        "total": 2,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Did NOT trigger the marketing skill",
+          "passed": true,
+          "evidence": "No skill was available in the without_skill arm, so the marketing skill was trivially not triggered."
+        },
+        {
+          "text": "Gives a normal, correct technical explanation of DNS resolution",
+          "passed": true,
+          "evidence": "The response provides a step-by-step explanation of DNS resolution from browser cache through root/TLD/authoritative servers, includes an ASCII diagram, covers record types and TTL, and is technically accurate throughout."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 26,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 2,
+        "failed": 0,
+        "total": 2,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Did NOT trigger the marketing skill (personal writing, not marketing)",
+          "passed": true,
+          "evidence": "No skill was available in the without_skill arm, so the marketing skill was trivially not triggered."
+        },
+        {
+          "text": "Writes a warm, normal personal thank-you note",
+          "passed": true,
+          "evidence": "The response delivers a warm, personalized thank-you note with suggestions to add specific details about the sweater's color or a personal memory, framed as a heartfelt message for a grandma."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.25,
+        "passed": 1,
+        "failed": 3,
+        "total": 4,
+        "time_seconds": 9.1,
+        "tokens": 14697,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Provides exactly three subject line options",
+          "passed": true,
+          "evidence": "The response provides exactly three numbered subject line options."
+        },
+        {
+          "text": "Each option takes a genuinely distinct angle and is labeled by angle (e.g. curiosity / benefit+offer / urgency)",
+          "passed": false,
+          "evidence": "The three options have explanatory descriptions but are not labeled by angle name (e.g., 'urgency', 'curiosity', 'benefit-led'); they are simply numbered 1, 2, 3."
+        },
+        {
+          "text": "Each subject line is under ~50 characters",
+          "passed": false,
+          "evidence": "Option 1 ('Black Friday Deal: 30% Off Your Coffee Subscription \u2014 Today Only') is approximately 65 characters, well over ~50."
+        },
+        {
+          "text": "Does not fabricate specific discount figures; flags if a real discount % is needed",
+          "passed": false,
+          "evidence": "Option 1 includes '30% Off' as a specific discount figure with no flagging that the actual discount percentage is needed from the user."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.0,
+        "passed": 0,
+        "failed": 3,
+        "total": 3,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Gate A fired: asked 2-3 sharp scoping questions BEFORE writing",
+          "passed": false,
+          "evidence": "No scoping questions were asked; the response immediately produces a complete positioning statement for a fabricated 'AgencyFlow' product."
+        },
+        {
+          "text": "Questions cover narrowest audience, key differentiator, and the real competing alternative",
+          "passed": false,
+          "evidence": "No questions were asked at all, so none of the required topics (narrowest audience, differentiator, competing alternative) were covered."
+        },
+        {
+          "text": "Did NOT output a finished positioning statement built on guessed inputs",
+          "passed": false,
+          "evidence": "The response outputs a full positioning statement and long-form version built entirely on invented details (product name 'AgencyFlow', invented features, guessed competitors)."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 5,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.33,
+        "passed": 1,
+        "failed": 2,
+        "total": 3,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Gate A fired: asked scoping questions before producing a voice profile",
+          "passed": false,
+          "evidence": "Although the response includes questions in Step 1, it simultaneously delivers a full generic brand voice framework with voice pillars, tone map, and word list templates, rather than purely asking first and waiting."
+        },
+        {
+          "text": "Asked about audience, the 3 words the brand should/shouldn't feel like, and competitors",
+          "passed": false,
+          "evidence": "The response asks about audience (Q4-6) and about words to use/avoid (Q8-9), but does not ask specifically about competitors or competitive positioning."
+        },
+        {
+          "text": "Did not invent a brand voice from nothing",
+          "passed": true,
+          "evidence": "The response provides a reusable template framework with placeholder examples rather than inventing a specific brand voice for the user's unnamed brand."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 6,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 3,
+        "failed": 0,
+        "total": 3,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Proceeded without Gate A because audience + differentiator were supplied",
+          "passed": true,
+          "evidence": "The response proceeds directly to the value proposition without asking clarifying questions, appropriately recognizing that audience (busy parents) and differentiator (5 minutes, whole ingredients) were supplied."
+        },
+        {
+          "text": "Produced an outcome-led, specific value proposition",
+          "passed": true,
+          "evidence": "The core value proposition statement leads with the parent outcome ('wholesome, chef-prepped meals on the table in 5 minutes') and is specific with concrete claims rather than vague benefits."
+        },
+        {
+          "text": "Is differentiated enough to pass the 'only this brand could say it' test",
+          "passed": true,
+          "evidence": "The combination of '5-minute table time' and 'zero ultra-processed ingredients' is a specific dual claim that distinguishes this service from generic meal-kit or convenience food brands."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 7,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.4,
+        "passed": 2,
+        "failed": 3,
+        "total": 5,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Defines 3-5 specific content pillars",
+          "passed": true,
+          "evidence": "The response defines 5 content pillars (Education 35%, Product/Feature 20%, Social Proof 20%, Thought Leadership 15%, Community/Culture 10%) in a clearly labeled table."
+        },
+        {
+          "text": "Maps content to funnel stages (TOFU/MOFU/BOFU)",
+          "passed": false,
+          "evidence": "The calendar does not map content to funnel stages (TOFU/MOFU/BOFU); monthly themes have business goals but the individual calendar rows contain no funnel-stage field or labeling."
+        },
+        {
+          "text": "Applies a value-heavy content mix ratio",
+          "passed": false,
+          "evidence": "Education is only 35% of the mix, with Product/Feature at 20% and Social Proof at 20%; the combined value-giving content is not clearly weighted toward 70-80% as a value-heavy ratio would require."
+        },
+        {
+          "text": "Calendar includes the reference fields: pillar, funnel stage, format, working title, CTA",
+          "passed": false,
+          "evidence": "The calendar table columns are Day/Channel/Content Type/Title-Topic/CTA \u2014 there is no pillar column linking rows to the defined pillars, and no funnel stage column."
+        },
+        {
+          "text": "Asks 2-3 scoping questions or states explicit assumptions (medium stakes)",
+          "passed": true,
+          "evidence": "The response includes a clearly labeled 'Assumptions Made' section covering company stage, product, goals, channels, team capacity, and audience, satisfying the stated-assumptions branch of this assertion."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 8,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "total": 4,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Triggered content strategy guidance, not a generic 'post valuable content' answer",
+          "passed": true,
+          "evidence": "No skill was available, but the response goes well beyond generic advice by providing 7 named content categories with specific examples, format tips, cadence guidance, and a what-to-avoid list."
+        },
+        {
+          "text": "Gives content pillars plus format guidance tied to LinkedIn norms",
+          "passed": true,
+          "evidence": "The response provides 7 content categories functioning as pillars and a dedicated Format Tips section covering post length, first-line hooks, link placement, carousels, and personal photos \u2014 all tied to LinkedIn-specific norms."
+        },
+        {
+          "text": "Ties content to funnel stages",
+          "passed": false,
+          "evidence": "The response does not mention funnel stages (TOFU/MOFU/BOFU) or map content categories to awareness, consideration, or conversion stages."
+        },
+        {
+          "text": "May ask about niche/audience",
+          "passed": true,
+          "evidence": "The 'Clarifying Questions' section at the end asks about consulting specialty and ideal client (niche/audience), satisfying this assertion."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 9,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.25,
+        "passed": 1,
+        "failed": 3,
+        "total": 4,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Asked 2-3 scoping questions (audience, goal/metric, timeline) and/or led with a one-page campaign brief",
+          "passed": false,
+          "evidence": "No skill was available; the response provides no scoping questions and no one-page campaign brief \u2014 it dives directly into a general launch plan without establishing goals, audience, or timeline first."
+        },
+        {
+          "text": "Provides a phased pre-launch / launch / post-launch structure",
+          "passed": true,
+          "evidence": "The response is explicitly structured into 'Before You Launch: Preparation,' 'Launch Day Strategy,' and 'Post-Launch: Building Momentum' sections, providing a clear three-phase structure."
+        },
+        {
+          "text": "Includes an asset checklist",
+          "passed": false,
+          "evidence": "The response does not include an asset checklist; the 'Creative Requirements' or equivalent list of deliverables is absent, and the metrics table covers tracking rather than assets to produce."
+        },
+        {
+          "text": "Pulls multiple modules (campaign + copy + email + measurement) without sprawling",
+          "passed": false,
+          "evidence": "The response covers tactics (Product Hunt, communities, ASO, influencers) but does not integrate distinct marketing modules such as a campaign brief, copy framework, email sequence structure, and measurement plan in a cohesive multi-module output."
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 0.8273,
+        "stddev": 0.2727,
+        "min": 0.25,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 6.1654,
+        "stddev": 13.6957,
+        "min": 0.0,
+        "max": 41.8
+      },
+      "tokens": {
+        "mean": 3846.8846,
+        "stddev": 8109.0241,
+        "min": 0,
+        "max": 22700
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.6227,
+        "stddev": 0.3159,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 1.6346,
+        "stddev": 4.9925,
+        "min": 0.0,
+        "max": 21.8
+      },
+      "tokens": {
+        "mean": 1713.3846,
+        "stddev": 4838.5469,
+        "min": 0,
+        "max": 15117
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.20",
+      "time_seconds": "+4.5",
+      "tokens": "+2134"
+    }
+  },
+  "notes": []
+}

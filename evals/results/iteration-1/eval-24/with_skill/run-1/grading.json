@@ -1,0 +1,7 @@
+{
+  "expectations": [
+    {"text": "Did NOT trigger the marketing skill (not a brand/product naming task)", "passed": true, "evidence": "trigger_decision.json shows triggered=false, reasoning that naming a pet cat has no connection to marketing copy, strategy, or any skill use case."},
+    {"text": "Gives a normal, friendly set of cat name ideas", "passed": true, "evidence": "The response provides three categorized lists of grey/lazy-themed cat names (Ash, Slate, Smokey, Dozer, etc.) and ends with friendly top picks and an engaging follow-up question."}
+  ],
+  "summary": {"passed": 2, "failed": 0, "total": 2, "pass_rate": 1.00}
+}
