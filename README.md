@@ -1,5 +1,5 @@
 <h1 align="center">📋 brief</h1>
-A full-stack **marketing skill for Claude** — copy, brand, content, campaigns, research, SEO, lifecycle, CRO, and measurement — that stays specific, asks before it guesses, and refuses to fake proof.
+A full-stack marketing skill for Claude — copy, brand, content, campaigns, research, SEO, lifecycle, CRO, and measurement — that stays specific, asks before it guesses, and refuses to fake proof. Star if useful.
 
 ![license](https://img.shields.io/badge/license-MIT-green)
 ![format](https://img.shields.io/badge/format-SKILL.md-blue)
