@@ -252,6 +252,8 @@ Run with-skill and baseline for each prompt, grade against expected_output, and 
 
 ## Contributing
 
+Star if useful.
+
 PRs and issues welcome.
 
 - Keep `SKILL.md` lean — it's always loaded; depth goes in `references/`
