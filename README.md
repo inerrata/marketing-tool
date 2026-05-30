@@ -1,4 +1,5 @@
 <h1 align="center">📋 brief</h1>
+<h2 align="center">If this is useful, a ⭐ helps others find it.</h2>
 A full-stack marketing skill for Claude — copy, brand, content, campaigns, research, SEO, lifecycle, CRO, and measurement — that stays specific, asks before it guesses, and refuses to fake proof. Star if useful.
 
 ![license](https://img.shields.io/badge/license-MIT-green)
